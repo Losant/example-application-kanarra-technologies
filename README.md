@@ -30,6 +30,14 @@ You can view a live version of this experience using the URL and login details b
 * User: kanarra@example.com
 * Pass: qwerty123
 
+Not every group has associated devices. If you'd like to explore different groups, the following regions and their children have devices associated.
+
+* California-Northern
+* Hawaii
+* Cincinnati
+* Irvin
+* Lima
+
 ---
 
 Copyright (c) 2019 Losant IoT, Inc
