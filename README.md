@@ -18,6 +18,7 @@ This repository contains several directly importable resources (e.g. Workflows, 
 * `./experiences/groups.json`: file that describes the Experience Groups hierarchy for this experience.
 * `./devices/generator.recipe`: the [Device Recipe](https://docs.losant.com/devices/device-recipes/) that describes the devices used in this example application. This can be directly imported into your application.
 * `./data-tables`: contain metadata files that describe the format of this application's data tables. Also contains CSV files that contain the required data.
+* `./globals.json`: contains the [Application Globals](https://docs.losant.com/applications/overview/#application-globals), which hold configuration values like the Google Maps API key.
 
 ---
 
