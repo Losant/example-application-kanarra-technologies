@@ -22,6 +22,14 @@ This repository contains several directly importable resources (e.g. Workflows, 
 * `./data-tables`: contain metadata files that describe the format of this application's data tables. Also contains CSV files that contain the required data.
 * `./globals.json`: contains the [Application Globals](https://docs.losant.com/applications/overview/#application-globals), which hold configuration values like the Google Maps API key.
 
+## Viewing this Experience Live
+
+You can view a live version of this experience using the URL and login details below:
+
+* URL: https://kanarra-technologies.onlosant.com
+* User: kanarra@example.com
+* Pass: qwerty123
+
 ---
 
 Copyright (c) 2019 Losant IoT, Inc
