@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{globals.googleMapsAPIKey}}"></script>
+
+    <script>
+      // Bring specific page data into JavaScript so it can be used by scripts (e.g. Google maps).
+      // Using a "kanarra" top-level name to remove any potential name conflicts.
+      var kanarra = {
+        selectedGroups: {{jsonEncode pageData.selectedGroups}}
+      };
+    </script>
+
+    <script>
+      {{component "js-device-block"}}
+      {{component "js-experience-groups-list"}}
+    </script>
+
+    <style>
+      {{component "css-global-reset"}}
+      {{component "css-global-styles"}}
+      {{component "css-sidebar"}}
+      {{component "css-page-home"}}
+      {{component "css-experience-groups-list"}}
+      {{component "css-device-groups"}}
+    </style>
+  </head>
+  <body>
+    <div id="home-page">
+      {{component "component-sidebar"}}
+      {{component "component-device-groups"}}
+    </div>
+  </body>
+</html>

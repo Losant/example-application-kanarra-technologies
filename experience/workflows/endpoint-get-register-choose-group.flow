@@ -1,0 +1,135 @@
+{
+  "_exportDate": "2019-06-11T13:45:24.820Z",
+  "_type": "flow",
+  "applicationId": "5cf96318afabc800087c6161",
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "Starter workflow for building a response to this endpoint",
+  "enabled": true,
+  "flowClass": "experience",
+  "globals": [
+  ],
+  "id": "5cfac21168273600080365d9",
+  "name": "Endpoint - GET /register-choose-group/{deviceId}",
+  "nodes": [
+    {
+      "config": {
+        "bodyTemplate": "working",
+        "bodyTemplateType": "path",
+        "cookieInfo": [
+        ],
+        "headerInfo": [
+        ],
+        "layoutIdTemplate": "",
+        "pageIdTemplate": "5cfac1cf68273600080365d7",
+        "replyIdPath": "",
+        "replyType": "page",
+        "responseCodeTemplate": "200"
+      },
+      "id": "SyLfJn-hx",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Endpoint Reply",
+        "name": "endpoint-reply",
+        "x": 100,
+        "y": 480
+      },
+      "outputIds": [
+        [
+          "BkhzMc9hl"
+        ]
+      ],
+      "type": "EndpointReplyNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "BkhzMc9hl",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Debug",
+        "name": "debug",
+        "x": 100,
+        "y": 640
+      },
+      "outputIds": [
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "idTemplate": "{{experience.user.experienceGroups.[0].id}}",
+        "resultPath": "working.experienceGroups"
+      },
+      "id": "I1XNk43YM6",
+      "meta": {
+        "category": "experience",
+        "description": "",
+        "id": "I1XNk43YM6",
+        "label": "Group: Summary",
+        "name": "group-summary",
+        "x": 100,
+        "y": 240
+      },
+      "outputIds": [
+        [
+          "cH_YeXK74V"
+        ]
+      ],
+      "type": "ExperienceGroupSummaryNode"
+    },
+    {
+      "config": {
+        "findMethod": "id",
+        "idTemplate": "{{data.params.deviceId}}",
+        "includeState": false,
+        "resultPath": "working.device",
+        "tagsAsObject": true
+      },
+      "id": "cH_YeXK74V",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "id": "cH_YeXK74V",
+        "label": "Device: Get",
+        "name": "get-device",
+        "x": 100,
+        "y": 340
+      },
+      "outputIds": [
+        [
+          "SyLfJn-hx"
+        ]
+      ],
+      "type": "GetDeviceNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "5cfac1b766b3b30008490a3f",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "label": "Endpoint",
+        "name": "endpoint",
+        "uiId": "H1hL0oZhl",
+        "x": 100,
+        "y": 100
+      },
+      "outputIds": [
+        [
+          "I1XNk43YM6"
+        ]
+      ],
+      "type": "endpoint"
+    }
+  ]
+}

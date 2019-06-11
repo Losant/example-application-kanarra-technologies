@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style>
+      {{component "css-global-reset"}}
+      {{component "css-global-styles"}}
+      {{component "css-page-about"}}
+      {{component "css-panel-page"}}
+    </style>
+  </head>
+  <body id="about-page">
+    <div class="panel-container">
+      <div class="panel-content">
+        <div class="about-content">
+          This application demonstrates a nested, multi-tenant, experience built and hosted entirely within the
+          Losant platform. For this example, Kanarra Technologies is a manufacturer of industrial power generators
+          that are sold to hospitals chains. These hospitals chains are divided into geographic regions each containing
+          multiple facilities. Users assigned to groups within this hierarchy are able to see the real-time and
+          historical performance data of devices associated with that group and any of its children. This application
+          allows Kanarra to offer a subscription service while empowering their customers with greater transparency
+          into the equipment they’ve purchased.
+        </div>
+        <div class="tenancy-diagram">
+          <img src="https://{{@root.globals.filesRoot}}/{{application.id}}/tenancy-diagram.png">
+        </div>
+        <div class="back-link">
+          <a href="/login">&lt; Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      {{component "css-global-reset"}}
+      {{component "css-global-styles"}}
+      {{component "css-page-login"}}
+      {{component "css-panel-page"}}
+    </style>
+  </head>
+  <body id="login-page">
+    <div class="panel-container">
+      <div class="panel-content">
+        <div id="login-page-logo">
+          <img src="https://{{@root.globals.filesRoot}}/{{application.id}}/kanarra-logo-stacked.png" width="171">
+        </div>
+        <form class="panel-page-form" action="/login" method="POST">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="jane@example.com" {{#eq request.query.invalid 'true'}}class="panel-page-invalid"{{/eq}}>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="password" {{#eq request.query.invalid 'true'}}class="panel-page-invalid"{{/eq}}>
+          <button>Sign In</button>
+        </form>
+        <div id="login-page-account-links">
+          <a href="/login">Forgot Password</a>
+        </div>
+        <div id="login-page-copyright">
+          Copyright © 2019, Kanarra Technologies Inc, All Rights Reserved
+        </div>
+        <div style="position:absolute;bottom:10px;left:10px;">
+          <a style="font-size:12px;" href="/about">About</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

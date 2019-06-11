@@ -1,0 +1,50 @@
+$(function() {
+
+  let countdownTimer = $('#countdown-timer');
+  let registerStartTime = parseInt(countdownTimer.data('registerStart'));
+  let currentTime = parseInt(countdownTimer.data('currentTime'));
+  let deviceId = countdownTimer.data('deviceId');
+  let now = new Date().getTime() / 1000;
+  let outOfTime = false;
+  
+
+  let countdownInterval = setInterval(() => {
+    timeRemaining = Math.floor(120 - (currentTime - registerStartTime) - (new Date().getTime() / 1000 - now));
+
+    if(timeRemaining <= 0) {
+      outOfTime = true;
+
+      // Hide the timer and show an error message.
+      countdownTimer.css('display', 'none');
+      $('#countdown-timer-label').css('display', 'none');
+      $('#countdown-failure').css('display', '')
+      clearInterval(countdownInterval);
+      return;
+    }
+
+    timeRemainingMins = Math.floor(timeRemaining / 60);
+    timeRemainingSecs = Math.abs(timeRemaining % 60);
+    countdownTimer.text(timeRemainingMins + ':' + ((timeRemainingSecs < 10) ? '0' + timeRemainingSecs : timeRemainingSecs));
+  }, 500);
+
+  let getDevice = function() {
+    if(!outOfTime) {
+      $.ajax({
+        url: "/api/devices/" + deviceId,
+        cache: false
+      })
+        .done(function( device ) {
+          let pushed = (((device || {}).tags || {}).registerReady || [])[0] === 'true';
+          if(pushed) {
+            $(location).attr('href', '/register-choose-group/' + deviceId);
+          }
+        })
+        .always(function() {
+          setTimeout(getDevice, 2000);
+        });
+    }
+  };
+
+  getDevice();
+
+});

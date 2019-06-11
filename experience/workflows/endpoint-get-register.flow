@@ -1,0 +1,144 @@
+{
+  "_exportDate": "2019-06-11T13:45:38.504Z",
+  "_type": "flow",
+  "applicationId": "5cf96318afabc800087c6161",
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "",
+  "enabled": true,
+  "flowClass": "experience",
+  "globals": [
+  ],
+  "id": "5cfa96b866b3b30008490a38",
+  "name": "Endpoint - GET /register/{deviceId}",
+  "nodes": [
+    {
+      "config": {
+        "bodyTemplate": "working",
+        "bodyTemplateType": "path",
+        "cookieInfo": [
+        ],
+        "headerInfo": [
+        ],
+        "layoutIdTemplate": "",
+        "pageIdTemplate": "5cfaac5c1930a50008279d34",
+        "replyIdPath": "",
+        "replyType": "page",
+        "responseCodeTemplate": ""
+      },
+      "id": "6inF59HtMW",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "id": "6inF59HtMW",
+        "label": "Endpoint Reply",
+        "name": "endpoint-reply",
+        "x": 160,
+        "y": 460
+      },
+      "outputIds": [
+        [
+          "_b6ukmxIkT"
+        ]
+      ],
+      "type": "EndpointReplyNode"
+    },
+    {
+      "config": {
+        "findMethod": "id",
+        "idTemplate": "{{data.params.deviceId}}",
+        "includeState": false,
+        "resultPath": "working.device",
+        "tagsAsObject": true
+      },
+      "id": "_fY972jxYo",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "id": "_fY972jxYo",
+        "label": "Device: Get",
+        "name": "get-device",
+        "x": 160,
+        "y": 220
+      },
+      "outputIds": [
+        [
+          "2qkGScCzKB"
+        ]
+      ],
+      "type": "GetDeviceNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "_b6ukmxIkT",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "id": "_b6ukmxIkT",
+        "label": "Debug",
+        "name": "debug",
+        "x": 160,
+        "y": 560
+      },
+      "outputIds": [
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "rules": [
+          {
+            "destination": "working.currentTime",
+            "type": "set",
+            "valueTemplate": "{{currentDateTime 'X'}}",
+            "valueTemplateType": "json"
+          }
+        ]
+      },
+      "id": "2qkGScCzKB",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "id": "2qkGScCzKB",
+        "label": "Mutate",
+        "name": "mutate",
+        "x": 160,
+        "y": 340
+      },
+      "outputIds": [
+        [
+          "6inF59HtMW"
+        ]
+      ],
+      "type": "MutateNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "5cfa96a250371c00095ba827",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "id": "j5wPN-VmKa",
+        "label": "Endpoint",
+        "name": "endpoint",
+        "uiId": "j5wPN-VmKa",
+        "x": 160,
+        "y": 80
+      },
+      "outputIds": [
+        [
+          "_fY972jxYo"
+        ]
+      ],
+      "type": "endpoint"
+    }
+  ]
+}

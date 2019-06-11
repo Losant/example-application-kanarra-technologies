@@ -1,0 +1,179 @@
+{
+  "_exportDate": "2019-06-11T13:46:38.321Z",
+  "_type": "flow",
+  "applicationId": "5cf96318afabc800087c6161",
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "Starter workflow for building a response to this endpoint",
+  "enabled": true,
+  "flowClass": "experience",
+  "globals": [
+  ],
+  "id": "5cfac5dc50371c00095ba838",
+  "name": "Endpoint POST /register-choose-group/{deviceId}",
+  "nodes": [
+    {
+      "config": {
+        "bodyTemplate": "/?group={{data.body.group}}",
+        "bodyTemplateType": "string",
+        "cookieInfo": [
+        ],
+        "headerInfo": [
+        ],
+        "replyIdPath": "",
+        "replyType": "redirect",
+        "responseCodeTemplate": "302"
+      },
+      "id": "SyLfJn-hx",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Endpoint Reply",
+        "name": "endpoint-reply",
+        "x": 100,
+        "y": 660
+      },
+      "outputIds": [
+        [
+          "BkhzMc9hl"
+        ]
+      ],
+      "type": "EndpointReplyNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "BkhzMc9hl",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Debug",
+        "name": "debug",
+        "x": 100,
+        "y": 780
+      },
+      "outputIds": [
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "findMethod": "id",
+        "idTemplate": "{{data.params.deviceId}}",
+        "includeState": false,
+        "resultPath": "working.device",
+        "tagsAsObject": true
+      },
+      "id": "3DTGaUN7bC",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "id": "3DTGaUN7bC",
+        "label": "Device: Get",
+        "name": "get-device",
+        "x": 100,
+        "y": 220
+      },
+      "outputIds": [
+        [
+          "CXLTwmfFse"
+        ]
+      ],
+      "type": "GetDeviceNode"
+    },
+    {
+      "config": {
+        "findMethod": "id",
+        "idTemplate": "{{data.body.group}}",
+        "resultPath": "working.group"
+      },
+      "id": "CXLTwmfFse",
+      "meta": {
+        "category": "experience",
+        "description": "",
+        "id": "CXLTwmfFse",
+        "label": "Group: Get",
+        "name": "get-experience-group",
+        "x": 100,
+        "y": 340
+      },
+      "outputIds": [
+        [
+          "Hqz12pLOxk"
+        ]
+      ],
+      "type": "GetExperienceGroupNode"
+    },
+    {
+      "config": {
+        "dataMethod": "individualFields",
+        "descriptionTemplate": "",
+        "deviceAttributes": [
+        ],
+        "deviceClassTemplate": "",
+        "deviceTags": [
+          {
+            "keyTemplate": "registerReady"
+          },
+          {
+            "keyTemplate": "registerStartTime"
+          },
+          {
+            "keyTemplate": "registerUserId"
+          },
+          {
+            "keyTemplate": "group",
+            "valueTemplate": "{{working.group.name}}"
+          }
+        ],
+        "gatewayIdTemplate": "",
+        "idTemplate": "{{working.device.id}}",
+        "nameTemplate": "",
+        "resultPath": "",
+        "tagsAsObject": false
+      },
+      "id": "Hqz12pLOxk",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "id": "Hqz12pLOxk",
+        "label": "Device: Update",
+        "name": "update-device",
+        "x": 100,
+        "y": 480
+      },
+      "outputIds": [
+        [
+          "SyLfJn-hx"
+        ]
+      ],
+      "type": "UpdateDeviceNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "5cfac5d868273600080365de",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "label": "Endpoint",
+        "name": "endpoint",
+        "uiId": "H1hL0oZhl",
+        "x": 100,
+        "y": 100
+      },
+      "outputIds": [
+        [
+          "3DTGaUN7bC"
+        ]
+      ],
+      "type": "endpoint"
+    }
+  ]
+}

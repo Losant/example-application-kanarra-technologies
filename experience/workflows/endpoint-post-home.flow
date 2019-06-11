@@ -1,0 +1,107 @@
+{
+  "_exportDate": "2019-06-11T13:45:48.969Z",
+  "_type": "flow",
+  "applicationId": "5cf96318afabc800087c6161",
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "Starter workflow for building a response to this endpoint",
+  "enabled": true,
+  "flowClass": "experience",
+  "globals": [
+  ],
+  "id": "5cf9632c66b3b300084909fc",
+  "name": "Endpoint - POST /",
+  "nodes": [
+    {
+      "config": {
+        "bodyTemplate": "/?{{#each data.body.group}}group={{this}}{{#ne @last true}}&{{/ne}}{{/each}}",
+        "bodyTemplateType": "string",
+        "cookieInfo": [
+        ],
+        "headerInfo": [
+        ],
+        "replyIdPath": "",
+        "replyType": "redirect",
+        "responseCodeTemplate": "302"
+      },
+      "id": "SyLfJn-hx",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Endpoint Reply",
+        "name": "endpoint-reply",
+        "x": 100,
+        "y": 380
+      },
+      "outputIds": [
+        [
+          "BkhzMc9hl"
+        ]
+      ],
+      "type": "EndpointReplyNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "BkhzMc9hl",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Debug",
+        "name": "debug",
+        "x": 100,
+        "y": 500
+      },
+      "outputIds": [
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "script": "if(!payload.data.body.group) {\n  payload.data.body.group = [];\n}\nelse if(!Array.isArray(payload.data.body.group)) {\n\tpayload.data.body.group = [payload.data.body.group];\n}"
+      },
+      "id": "lOpGOTdZq_",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "id": "lOpGOTdZq_",
+        "label": "Function",
+        "name": "function",
+        "x": 100,
+        "y": 220
+      },
+      "outputIds": [
+        [
+          "SyLfJn-hx"
+        ]
+      ],
+      "type": "RawFunctionNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "5cf9632c66b3b300084909fa",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "label": "Endpoint",
+        "name": "endpoint",
+        "uiId": "H1hL0oZhl",
+        "x": 100,
+        "y": 100
+      },
+      "outputIds": [
+        [
+          "lOpGOTdZq_"
+        ]
+      ],
+      "type": "endpoint"
+    }
+  ]
+}

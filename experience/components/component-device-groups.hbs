@@ -1,0 +1,22 @@
+<div class="device-groups" style="flex:auto; padding:30px;box-sizing:border-box;height:100%;overflow:scroll;">
+  {{! Only show the register button if the user has a 'role' tag set to 'admin'. }}
+  {{#eq experience.user.userTags.role 'admin'}}
+  <div style="text-align: right; margin-bottom:15px; margin-top:-10px;">
+    <form action="/register">
+      <button class="button">Register Device</button>
+    </form>
+  </div>
+  {{/eq}}
+  {{! Holds the overview map. Rendered using Google Maps. }}
+  <div class="device-group">
+    <div class="device-group-name">Device Locations</div>
+    <div style="height:400px;width:100%;margin-top:15px;">
+      <div id="device-groups-overview-map" style="border:1px solid #DEDCD3; width:100%; height:100%">
+        {{! map placed here by JavaScript in js-device-blocks component }}
+      </div>
+    </div>
+  </div>
+  {{#each @root.pageData.selectedGroups}}
+    {{component "component-device-group" this}}
+  {{/each}}
+</div>

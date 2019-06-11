@@ -1,0 +1,53 @@
+$(function() {
+
+  // Add maps to each individual device block.
+  // Blocks are rendered in the "device-groups" component.
+  $('.component-device-block .map-container').each(function(){
+
+    let location = $(this).data('deviceLocation').split(',');
+    location = { lat: parseFloat(location[0]), lng: parseFloat(location[1]) };
+
+    let map = new google.maps.Map(this, {
+      center: location,
+      zoom: 12
+    });
+
+    let marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      icon: { url: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" }
+    });
+  });
+
+  function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  // Adds the overview map.
+  let map = new google.maps.Map($('#device-groups-overview-map').get(0), {
+    center: {lat: -34.397, lng: 150.644}
+  });
+
+  let bounds = new google.maps.LatLngBounds();
+
+  let addMarkers = devices => {
+    devices.forEach(device => {
+      let location = device.tags.location[0].split(',');
+      let unhealthy = device.compositeState.is_in_faulted_mode.value == 1 || device.compositeState.is_in_maintenance_mode.value == 1 || device.compositeState.fuel_level.value < 25;
+      let marker = new google.maps.Marker({
+        position: { lat: parseFloat(location[0]), lng: parseFloat(location[1]) },
+        map: map,
+        icon: { url: unhealthy ? "https://maps.google.com/mapfiles/ms/icons/red-dot.png" : "https://maps.google.com/mapfiles/ms/icons/green-dot.png" },
+        zIndex: unhealthy ? 100 : 0
+      });
+      bounds.extend(marker.position);
+    });
+  };
+
+  kanarra.selectedGroups.forEach(group => {
+    addMarkers(group.devices);
+  });
+
+  map.fitBounds(bounds);
+
+});

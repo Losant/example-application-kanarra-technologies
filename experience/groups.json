@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Kanarra Technologies",
+    "children": [
+      {
+        "name": "Sadler-Isberg",
+        "children": [
+          {
+            "name": "California - Northern",
+            "children": [
+              {
+                "name": "San Bruno Medical Offices",
+                "deviceTags": [{"key": "group", "value": "San Bruno Medical Offices"}]
+              },
+              {
+                "name": "Sneath Lane Medical Offices",
+                "deviceTags": [{"key": "group", "value": "Sneath Lane Medical Offices"}]
+              },
+              {
+                "name": "South San Francisco Medical Center",
+                "deviceTags": [{"key": "group", "value": "South San Francisco Medical Center"}]
+              },
+              {
+                "name": "Vacaville Medical Center",
+                "deviceTags": [{"key": "group", "value": "Vacaville Medical Center"}]
+              }
+            ]
+          },
+          {
+            "name": "California - Southern"
+          },
+          {
+            "name": "Colorado - Denver/Boulder/Mountain"
+          },
+          {
+            "name": "Colorado - Northern Colorado"
+          },
+          {
+            "name": "Colorado - Southern Colorado"
+          },
+          {
+            "name": "Georgia"
+          },
+          {
+            "name": "Hawaii",
+            "children": [
+              {
+                "name": "Kona Medical Office",
+                "deviceTags": [{"key": "group", "value": "Kona Medical Office"}]
+              },
+              {
+                "name": "Moanalua Medical Center",
+                "deviceTags": [{"key": "group", "value": "Moanalua Medical Center"}]
+              }
+            ]
+          },
+          {
+            "name": "Maryland/Virginia/Washington D.C."
+          },
+          {
+            "name": "Oregon/SW Washington"
+          },
+          {
+            "name": "Washington"
+          }
+        ]
+      },
+      {
+        "name": "Tekton Health",
+        "children": [
+          {
+            "name": "Cincinnati",
+            "children": [
+              {
+                "name": "Mercy Health - Anderson Hospital",
+                "deviceTags": [{"key": "group", "value": "Mercy Health - Anderson Hospital"}]
+              },
+              {
+                "name": "Mercy Health - Clermont Hospital",
+                "deviceTags": [{"key": "group", "value": "Mercy Health - Clermont Hospital"}]
+              },
+              {
+                "name": "Mercy Health - Fairfield Hospital",
+                "deviceTags": [{"key": "group", "value": "Mercy Health - Fairfield Hospital"}]
+              },
+              {
+                "name": "Mercy Health - West Hospital",
+                "deviceTags": [{"key": "group", "value": "Mercy Health - West Hospital"}]
+              },
+              {
+                "name": "The Jewish Hospital - Mercy Health",
+                "deviceTags": [{"key": "group", "value": "The Jewish Hospital - Mercy Health"}]
+              }
+            ]
+          },
+          {
+            "name": "Irvin",
+            "children": [
+              {
+                "name": "Mercy Health - Marcum and Wallace Hospital",
+                "deviceTags": [{"key": "group", "value": "Mercy Health - Marcum and Wallace Hospital"}]
+              }
+            ]
+          },
+          {
+            "name": "Lima",
+            "children": [
+              {
+                "name": "Mercy Health - St. Rita's Medical Center",
+                "deviceTags": [{"key": "group", "value": "Mercy Health - St. Rita's Medical Center"}]
+              }
+            ]
+          },
+          {
+            "name": "Lorain"
+          },
+          {
+            "name": "Paducah"
+          },
+          {
+            "name": "Springfield"
+          },
+          {
+            "name": "Toledo"
+          },
+          {
+            "name": "Youngstown"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+<div class="component-device-block">
+  <div class="header">
+    <div class="header-model">Model</div>
+    {{this.tags.model.[0]}}
+    <div class="header-details">
+      <a href="/device-details?device={{this.id}}{{#each @root.pageData.selectedGroups}}&group={{this.id}}{{/each}}">
+        <img src="https://{{@root.globals.filesRoot}}/{{@root.application.id}}/angle-right.png">
+      </a>
+    </div>
+  </div>
+  <div
+    class="main-health-indicator"
+    data-faulted-mode="{{this.compositeState.is_in_faulted_mode.value}}"
+    data-maintenance-mode="{{this.compositeState.is_in_maintenance_mode.value}}"
+    data-low-fuel="{{#lt this.compositeState.fuel_level.value 25}}1{{else}}0{{/lt}}">
+  </div>
+  <div class="status-row">
+    <div class="status-description">
+      <div class="status-indicator status-color-{{lower this.compositeState.state_description.value}}"></div>
+      <div>{{this.compositeState.state_description.value}}</div>
+    </div>
+    <div>
+      {{this.tags.serial.[0]}}
+    </div>
+  </div>
+  <div class="image-container">
+    <a href="/device-details?device={{this.id}}{{#each @root.pageData.selectedGroups}}&group={{this.id}}{{/each}}">
+      <img class="device-image" src="https://{{@root.globals.filesRoot}}/{{@root.application.id}}{{this.tags.image.[0]}}">
+    </a>
+  </div>
+  <div class="location-label">
+    Location
+  </div>
+  <div class="location-map">
+    <div class="map-container" data-device-location="{{this.tags.location.[0]}}" data-device-id="{{this.id}}">
+      {{! map placed here by JavaScript in js-device-blocks component }}
+    </div>
+  </div>
+  <div class="health-indicator">
+    <div class="health-indicator-color-block" data-faulted-mode="{{this.compositeState.is_in_faulted_mode.value}}" data-maintenance-mode="0" data-low-fuel="0"></div>
+    <div>{{#eq this.compositeState.is_in_faulted_mode.value 1}}{{this.compositeState.fault_description.value}}{{else}}System Healthy{{/eq}}</div>
+  </div>
+  <div class="health-indicator">
+    <div class="health-indicator-color-block" data-faulted-mode="0" data-maintenance-mode="{{this.compositeState.is_in_maintenance_mode.value}}" data-low-fuel="0"></div>
+    <div>{{#eq this.compositeState.is_in_maintenance_mode.value 1}}{{this.compositeState.maintenance_description.value}}{{else}}No Scheduled Maintenance Required{{/eq}}</div>
+  </div>
+  <div class="health-indicator">
+    <div class="health-indicator-color-block" data-faulted-mode="0" data-maintenance-mode="0" data-low-fuel="{{#lt this.compositeState.fuel_level.value 25}}1{{else}}0{{/lt}}"></div>
+    <div>Fuel Level {{format this.compositeState.fuel_level.value '0.1f'}}%</div>
+  </div>
+</div>

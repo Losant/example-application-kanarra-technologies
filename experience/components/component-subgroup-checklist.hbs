@@ -1,0 +1,17 @@
+<li {{#gt this.children.length 0}}class="group-container"{{/gt}}>
+<p>
+  <input class="experience-group-check" id="experience-group-check-{{this.id}}" type="checkbox" value="{{this.id}}" name="group" {{#each @root.pageData.selectedGroups}}{{#eq this.id ../id}} checked{{/eq}}{{/each}}>
+  <label for="input-group-{{this.id}}">
+    {{this.name}}
+  </label>
+</p>
+
+{{#gt this.children.length 0}}
+<ul>
+  {{#each this.children}}
+    {{component "component-subgroup-checklist" this}}
+  {{/each}}
+</ul>
+{{/gt}}
+
+</li>

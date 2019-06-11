@@ -1,0 +1,11 @@
+<div class="experience-groups">
+  <ul>
+    {{#eq pageData.experienceGroups.name '(root)'}}
+      {{#each pageData.experienceGroups.children }}
+        {{component "component-subgroup-checklist" this}}
+      {{/each}}
+    {{else}}
+      {{component "component-subgroup-checklist" pageData.experienceGroups}}
+    {{/eq}}
+  </ul>
+</div>

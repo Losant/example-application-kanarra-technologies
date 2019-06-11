@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script>
+      {{component "js-layout-device-details"}}
+    </script>
+
+    <style>
+      {{component "css-global-reset"}}
+      {{component "css-global-styles"}}
+      {{component "css-sidebar"}}
+      {{component "css-layout-device-details"}}
+    </style>
+  </head>
+  <body id="layout-device-details">
+    <div style="display:flex; flex-direction:row; height:100%; width:100%;">
+      {{! Sidebar }}
+      <div class="sidebar-container">
+        <div style="display:flex; flex-direction:column; height:100%;">
+          <div class="sidebar-logo-small">
+            <img src="https://{{@root.globals.filesRoot}}/{{application.id}}/kanarra-logo-small.png">
+          </div>
+          <div>
+            <p class="sidebar-header">
+              Devices
+            </p>
+          </div>
+          <div style="overflow-y:scroll;">
+            <ul>
+              {{#each pageData.devices}}
+              <li>
+                <a class="device-list-item-link" href="/device-details?device={{this.id}}{{#each @root.pageData.selectedGroupIds}}&group={{this}}{{/each}}">
+                  <div id="{{this.id}}" class="device-list-item{{#eq this.id @root.request.query.device}} selected{{/eq}}">
+                    <div style="width:3px; height:40px; margin-right:5px;" class="{{#eq this.compositeState.state_description.value 'Running'}} status-green{{else}} status-red{{/eq}}"></div>
+                    <div style="box-sizing:border-box;margin-top:4px;padding:2px; width:32px;height:32px;background-color:white;border:1px solid #EFEEE8;margin-right:5px;">
+                      <img src="https://{{@root.globals.filesRoot}}/{{@root.application.id}}{{this.tags.image.[0]}}" style="width:100%; height:100%; object-fit:contain;">
+                    </div>
+                    <div>{{this.tags.serial.[0]}}</div>
+                  </div>
+                </a>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{! Dashboard }}
+      <div style="display:flex; flex-direction:column; width:100%; height:100%;box-sizing:border-box;">
+        <div class="breadcrumbs">
+          <a href="/{{#each @root.pageData.selectedGroupIds}}{{#eq @index 0}}?{{else}}&{{/eq}}group={{this}}{{/each}}">Device Groups</a> > {{@root.pageData.device.tags.serial.[0]}}
+        </div>
+        <div style="box-sizing:border-box;overflow-y:scroll;flex-basis:100%;padding:10px;margin:0px 30px 30px 30px;background-color:white;border-radius: 6px;" class="{{#eq @root.pageData.device.compositeState.state_description.value 'Running'}} status-border-green{{else}} status-border-red{{/eq}}">
+          {{page}}        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+      {{component "css-global-reset"}}
+      {{component "css-global-styles"}}
+      {{component "css-panel-page"}}
+    </style>
+  </head>
+  <body id="about-page">
+    <div class="panel-container">
+      <div class="panel-content">
+        <div style="margin-bottom:10px;">
+          <h2>Step 1: Enter your device's serial number</h2>
+        </div>
+        <div style="width:490px; font-size:11px; line-height:16px; margin-bottom:40px;">
+          The device’s serial number can be found on a small metal plate
+          inside the cabinet. Refer to our guide, <a href="#">how to find your device’s serial number</a>,
+          for more details.
+        </div>
+        <form class="panel-page-form" action="/register" method="POST">
+          <label for="serial">Serial Number</label>
+          <input type="text" id="serial" name="serial" placeholder="xxxxxxxx" {{#eq request.query.invalid 'true'}}class="panel-page-invalid"{{/eq}}>
+          <button>Next</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

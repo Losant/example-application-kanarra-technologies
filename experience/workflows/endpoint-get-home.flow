@@ -1,0 +1,265 @@
+{
+  "_exportDate": "2019-06-11T13:44:33.212Z",
+  "_type": "flow",
+  "applicationId": "5cf96318afabc800087c6161",
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "",
+  "enabled": true,
+  "flowClass": "experience",
+  "globals": [
+  ],
+  "id": "5cf9632c66b3b300084909fe",
+  "name": "Endpoint - GET /",
+  "nodes": [
+    {
+      "config": {
+        "bodyTemplate": "working",
+        "bodyTemplateType": "path",
+        "cookieInfo": [
+        ],
+        "headerInfo": [
+        ],
+        "layoutIdTemplate": "",
+        "pageIdTemplate": "5cf9632c50371c00095ba7bc",
+        "replyIdPath": "",
+        "replyType": "page",
+        "responseCodeTemplate": ""
+      },
+      "id": "t8OylqAbw6",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "id": "t8OylqAbw6",
+        "label": "Endpoint Reply",
+        "name": "endpoint-reply",
+        "x": 80,
+        "y": 600
+      },
+      "outputIds": [
+        [
+          "doFJtc1bfn"
+        ]
+      ],
+      "type": "EndpointReplyNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "doFJtc1bfn",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "id": "doFJtc1bfn",
+        "label": "Debug",
+        "name": "debug",
+        "x": 80,
+        "y": 820
+      },
+      "outputIds": [
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "idTemplate": "{{experience.user.experienceGroups.[0].id}}",
+        "resultPath": "working.experienceGroups"
+      },
+      "id": "sZLLijpiD1",
+      "meta": {
+        "category": "experience",
+        "description": "",
+        "id": "sZLLijpiD1",
+        "label": "Group: Summary",
+        "name": "group-summary",
+        "x": 80,
+        "y": 220
+      },
+      "outputIds": [
+        [
+          "bKHhyoKkYL"
+        ]
+      ],
+      "type": "ExperienceGroupSummaryNode"
+    },
+    {
+      "config": {
+        "script": "let selectedGroupIds = [];\n\nif(Array.isArray(payload.data.query.group)) {\n  selectedGroupIds = payload.data.query.group;\n} else if(payload.data.query.group !== undefined) {\n  selectedGroupIds = [payload.data.query.group];\n}\n\npayload.working.selectedGroupIds = selectedGroupIds;\n\n"
+      },
+      "id": "bKHhyoKkYL",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "id": "bKHhyoKkYL",
+        "label": "Function",
+        "name": "function",
+        "x": 80,
+        "y": 320
+      },
+      "outputIds": [
+        [
+          "5AE-JJPOrM"
+        ]
+      ],
+      "type": "RawFunctionNode"
+    },
+    {
+      "config": {
+        "currentItemPath": "working.selectedGroupId",
+        "loopSourcePath": "working.selectedGroupIds"
+      },
+      "id": "5AE-JJPOrM",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "groupStartX": 200,
+        "groupStartY": 200,
+        "id": "5AE-JJPOrM",
+        "label": "Loop",
+        "name": "loop",
+        "x": 80,
+        "y": 420
+      },
+      "outputIds": [
+        [
+          "t8OylqAbw6"
+        ],
+        [
+          "Oie0xXWd3F"
+        ]
+      ],
+      "type": "LoopNode"
+    },
+    {
+      "config": {
+        "loopNodeId": "5AE-JJPOrM",
+        "shouldBreak": false
+      },
+      "id": "jkfsK5Q977",
+      "meta": {
+        "category": "loop",
+        "description": "",
+        "groupId": "5AE-JJPOrM",
+        "id": "jkfsK5Q977",
+        "label": "Next",
+        "name": "loop-next",
+        "x": 200,
+        "y": 640
+      },
+      "outputIds": [
+      ],
+      "type": "LoopCapNode"
+    },
+    {
+      "config": {
+        "findMethod": "id",
+        "idTemplate": "{{working.selectedGroupId.value}}",
+        "resultPath": "working.selectedGroup"
+      },
+      "id": "Oie0xXWd3F",
+      "meta": {
+        "category": "experience",
+        "description": "",
+        "groupId": "5AE-JJPOrM",
+        "id": "Oie0xXWd3F",
+        "label": "Group: Get",
+        "name": "get-experience-group",
+        "x": 200,
+        "y": 300
+      },
+      "outputIds": [
+        [
+          "8qtnJqHwX7"
+        ]
+      ],
+      "type": "GetExperienceGroupNode"
+    },
+    {
+      "config": {
+        "destArrayPath": "working.selectedGroups",
+        "rules": [
+          {
+            "inputTemplate": "{{working.selectedGroup}}",
+            "type": "push"
+          }
+        ],
+        "sourceArrayPath": "working.selectedGroups"
+      },
+      "id": "Z_QmxV5CID",
+      "meta": {
+        "category": "logic",
+        "description": "",
+        "groupId": "5AE-JJPOrM",
+        "id": "Z_QmxV5CID",
+        "label": "Array",
+        "name": "array",
+        "x": 200,
+        "y": 500
+      },
+      "outputIds": [
+        [
+          "jkfsK5Q977"
+        ]
+      ],
+      "type": "ArrayNode"
+    },
+    {
+      "config": {
+        "findMethod": "experienceGroupId",
+        "findMultiple": true,
+        "idTemplate": "{{working.selectedGroup.id}}",
+        "includeState": true,
+        "resultPath": "working.selectedGroup.devices",
+        "resultsPage": "0",
+        "resultsPerPage": "100",
+        "sortDirection": "asc",
+        "sortField": "name",
+        "tagsAsObject": true
+      },
+      "id": "8qtnJqHwX7",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "groupId": "5AE-JJPOrM",
+        "id": "8qtnJqHwX7",
+        "label": "Device: Get",
+        "name": "get-device",
+        "x": 200,
+        "y": 400
+      },
+      "outputIds": [
+        [
+          "Z_QmxV5CID"
+        ]
+      ],
+      "type": "GetDeviceNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "5cf9632cafabc800087c617a",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "id": "xUhgZy08cj",
+        "label": "Endpoint",
+        "name": "endpoint",
+        "uiId": "xUhgZy08cj",
+        "x": 80,
+        "y": 20
+      },
+      "outputIds": [
+        [
+          "sZLLijpiD1"
+        ]
+      ],
+      "type": "endpoint"
+    }
+  ]
+}

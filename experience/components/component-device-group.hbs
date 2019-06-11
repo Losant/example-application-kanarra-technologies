@@ -1,0 +1,8 @@
+<div class="device-group device-group-{{#if this.healthy}}healthy{{else}}unhealthy{{/if}}">
+  <div class="device-group-name">{{this.name}}</div>
+  <div style="display:flex; flex-direction:row; flex-wrap:wrap;">
+    {{#each this.devices}}
+      {{component 'component-device-block' this}}
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+      {{component "css-global-reset"}}
+      {{component "css-global-styles"}}
+      {{component "css-panel-page"}}
+      {{component "css-experience-groups-list"}}
+    </style>
+  </head>
+  <body id="about-page">
+    <div class="panel-container">
+      <div class="panel-content">
+        <div style="margin-bottom:10px;">
+          <h2>Step 3: Choose a group for this device</h2>
+        </div>
+        <div style="width:460px; font-size:11px; line-height:16px; margin-bottom:40px;">
+          Your device has been successfully registered. Please choose a group to place this device into. You can change this later at any time.
+        </div>
+        <form action="/register-choose-group/{{pageData.device.id}}" method="POST">
+          <div style="width:460px; height:276px; border:1px solid #91A49C; border-radius:6px;margin-bottom:25px;padding:10px;box-sizing:border-box;">
+            {{component "component-group-checklist"}}
+          </div>
+          <button>Done</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

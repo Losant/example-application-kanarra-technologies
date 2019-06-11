@@ -1,0 +1,25 @@
+{
+    "name": "warnings_and_alarms",
+    "columns": [
+      {
+        "name": "warning_or_alarm",
+        "dataType": "number",
+        "constraint": "required"
+      },
+      {
+        "name": "warning_or_alarm_index",
+        "dataType": "number",
+        "constraint": "required"
+      },
+      {
+        "name": "description",
+        "dataType": "string",
+        "constraint": "required"
+      },
+      {
+        "name": "additional_information",
+        "dataType": "string",
+        "constraint": "required"
+      }
+    ]
+  }

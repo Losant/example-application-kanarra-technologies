@@ -1,0 +1,21 @@
+$(function() {
+  $('.experience-group-check').change(function() {
+    experienceGroupsListCheckChildren(this);
+  });
+
+  // On page load, check/disable all children.
+  $('.experience-group-check:checked').each(function(index, item) {
+    experienceGroupsListCheckChildren(item);
+  });
+
+  // Scroll the first selected group into view.
+  $('.experience-group-check:checked')[0].scrollIntoView();
+});
+
+var experienceGroupsListCheckChildren = function(element) {
+  // Check/uncheck all child groups.
+  // Also disable child groups if parent is checked.
+  $(element).parents('li').first().find('input').not($(element))
+    .prop('checked', element.checked)
+    .prop('disabled', element.checked);
+};

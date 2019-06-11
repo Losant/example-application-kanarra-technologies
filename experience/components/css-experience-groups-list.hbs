@@ -1,0 +1,68 @@
+.experience-groups {
+  overflow:scroll;
+  overflow-y:auto;
+  height:100%;
+}
+
+.experience-groups ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-groups li {
+  padding-left: 15px;
+  position: relative;
+}
+
+.experience-groups li input {
+  width: 17px;
+  height: 17px;
+  z-index: 1;
+  background: white;
+  position: relative;
+  margin-right: 4px;
+}
+
+.experience-groups li.group-container::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: 8px;
+  border-left: 1px solid #ACBBB5;
+}
+
+.experience-groups li.group-container:last-child::before {
+  content: '';
+  border-left: none;
+}
+
+.experience-groups li p {
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.experience-groups li p::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 28px;
+  top: -17px;
+  left: 8px;
+  border-bottom: 1px solid #ACBBB5;
+  border-left: 1px solid #ACBBB5;
+  z-index: 0;
+}
+
+.experience-groups > ul:first-child > li:first-child > p:first-child::before {
+  content: '';
+  border: none;
+}
+
+.experience-groups > ul:first-child > li:first-child {
+  padding-left: 8px;
+}
