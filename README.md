@@ -8,7 +8,7 @@ For this example, Kanarra Technologies is a hypothetical manufacturer of industr
 
 ## How to Use this Application
 
-This example contains the Losant [Experience](https://docs.losant.com/experiences/overview/), [Workflows](https://docs.losant.com/workflows/overview/), [Files](https://docs.losant.com/applications/files/), [Data Tables](https://docs.losant.com/data-tables/overview/), and [Device Recipes](https://docs.losant.com/devices/device-recipes/) required to implement the complete Kanarra Technologies remote monitoring solution. It is intended to be used as a reference implementation for developers seeking best practices or additional information on how to build a similar project.
+This example contains the Losant [Experience](https://docs.losant.com/experiences/overview/), [Workflows](https://docs.losant.com/workflows/overview/), [Files](https://docs.losant.com/applications/files/), [Data Tables](https://docs.losant.com/data-tables/overview/), and [Device Recipes](https://docs.losant.com/devices/device-recipes/) required to implement the complete Kanarra Technologies remote monitoring solution. It is intended to be used as a reference implementation for Losant developers seeking best practices or additional information on how to build a similar project.
 
 ## What's in This Repo?
 
