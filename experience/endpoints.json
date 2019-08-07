@@ -113,5 +113,25 @@
       "statusCode": 302,
       "value": "/login"
     }
+  },
+  {
+    "route": "/maintenance-intervals",
+    "method": "post",
+    "access": "authenticated",
+    "unauthorizedReply": {
+      "type": "redirect",
+      "statusCode": 302,
+      "value": "/login"
+    }
+  },
+  {
+    "route": "/maintenance-intervals",
+    "method": "get",
+    "access": "authenticated",
+    "unauthorizedReply": {
+      "type": "redirect",
+      "statusCode": 302,
+      "value": "/login"
+    }
   }
 ]

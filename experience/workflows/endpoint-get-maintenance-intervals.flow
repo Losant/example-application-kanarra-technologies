@@ -1,0 +1,117 @@
+{
+  "_exportDate": "2019-08-07T20:49:01.131Z",
+  "_type": "flow",
+  "applicationId": "5cf96318afabc800087c6161",
+  "customNodeVersions": [
+  ],
+  "customNodes": [
+  ],
+  "description": "Starter workflow for building a response to this endpoint",
+  "enabled": true,
+  "flowClass": "experience",
+  "globals": [
+  ],
+  "id": "5d431bc39190740006f92c14",
+  "name": "Endpoint GET /maintenance-intervals",
+  "nodes": [
+    {
+      "config": {
+        "bodyTemplate": "working",
+        "bodyTemplateType": "path",
+        "cookieInfo": [
+        ],
+        "headerInfo": [
+        ],
+        "layoutIdTemplate": "",
+        "pageIdTemplate": "5d431bb774a2f00006aa7888",
+        "replyIdPath": "",
+        "replyType": "page",
+        "responseCodeTemplate": "200"
+      },
+      "id": "SyLfJn-hx",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Endpoint Reply",
+        "name": "endpoint-reply",
+        "x": 100,
+        "y": 360
+      },
+      "outputIds": [
+        [
+          "BkhzMc9hl"
+        ]
+      ],
+      "type": "EndpointReplyNode"
+    },
+    {
+      "config": {
+        "message": "",
+        "property": ""
+      },
+      "id": "BkhzMc9hl",
+      "meta": {
+        "category": "output",
+        "description": "",
+        "label": "Debug",
+        "name": "debug",
+        "x": 100,
+        "y": 480
+      },
+      "outputIds": [
+      ],
+      "type": "DebugNode"
+    },
+    {
+      "config": {
+        "dataTableIdTemplate": "5cf963287e52810008763a89",
+        "includeFieldsTemplate": "",
+        "limitTemplate": "",
+        "offsetTemplate": "",
+        "queryTemplate": "",
+        "resultPath": "working.maintenanceIntervals",
+        "sortColumnTemplate": "",
+        "sortDirectionTemplate": ""
+      },
+      "id": "ZHcokb5WAr",
+      "meta": {
+        "category": "data",
+        "description": "",
+        "id": "ZHcokb5WAr",
+        "label": "Table: Get Rows",
+        "name": "get-table-rows",
+        "queryMode": "$or",
+        "x": 100,
+        "y": 240
+      },
+      "outputIds": [
+        [
+          "SyLfJn-hx"
+        ]
+      ],
+      "type": "DataTableQueryNode"
+    }
+  ],
+  "triggers": [
+    {
+      "config": {
+      },
+      "key": "5d431a543e0b5c00065d6837",
+      "meta": {
+        "category": "trigger",
+        "description": "",
+        "label": "Endpoint",
+        "name": "endpoint",
+        "uiId": "H1hL0oZhl",
+        "x": 100,
+        "y": 100
+      },
+      "outputIds": [
+        [
+          "ZHcokb5WAr"
+        ]
+      ],
+      "type": "endpoint"
+    }
+  ]
+}
