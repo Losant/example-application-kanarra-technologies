@@ -18,7 +18,7 @@
           <input type="text" id="email" name="email" placeholder="jane@example.com" {{#eq request.query.invalid 'true'}}class="panel-page-invalid"{{/eq}}>
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="password" {{#eq request.query.invalid 'true'}}class="panel-page-invalid"{{/eq}}>
-          <button>Sign In</button>
+          <button class="large-button">Sign In</button>
         </form>
         <div id="login-page-account-links">
           <a href="/login">Forgot Password</a>

@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      {{component "css-global-reset"}}
+      {{component "css-global-styles"}}
+      {{component "css-panel-page"}}
+      {{component "css-page-maintenance-intervals"}}
+    </style>
+  </head>
+  <body id="maintenance-interval-page">
+    <div class="panel-container">
+      <div class="panel-content">
+         <div>
+          <h2>Maintenance Intervals</h2>
+        </div>
+        <div style="width:100%;padding:30px;box-sizing: border-box;">
+          <table style="width:100%;">
+            <tr>
+              <th>Service Schedule</th>
+              <th>Description</th>
+              <th>Months</th>
+              <th>Hours</th>
+            </tr>
+            {{#each pageData.maintenanceIntervals.items}}
+            <tr>
+              <td>{{this.service_schedule}}</td>
+              <td>{{this.description}}</td>
+              <td>{{this.condition_in_months}}</td>
+              <td>{{this.condition_in_hours}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+        {{! Only show the upload form if the user is an admin and a member of Kanarra Technologies }}
+        {{#eq experience.user.experienceGroups.[0].name 'Kanarra Technologies'}}
+        {{#eq experience.user.userTags.role 'admin'}}
+        <form action="/maintenance-intervals" method="POST" enctype="multipart/form-data">
+          <div style="font-size: 16px; text-align:center;margin-bottom:15px;">
+            Upload new maintenance intervals
+          </div>
+          <div>
+            <div style="text-align:center;">
+              <input type="file" name="maintenanceIntervals" id="maintenanceIntervals" accept=".csv">
+            </div>
+            <div style="text-align:center;margin-top:10px;">
+              <button class="button">Upload</button>
+            </div>
+          </div>
+        </form>
+        {{/eq}}
+        {{/eq}}
+        <div class="back-link">
+          <a href="/">&lt; Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

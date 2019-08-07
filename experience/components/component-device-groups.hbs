@@ -1,12 +1,20 @@
 <div class="device-groups" style="flex:auto; padding:30px;box-sizing:border-box;height:100%;overflow:scroll;">
-  {{! Only show the register button if the user has a 'role' tag set to 'admin'. }}
-  {{#eq experience.user.userTags.role 'admin'}}
-  <div style="text-align: right; margin-bottom:15px; margin-top:-10px;">
-    <form action="/register">
-      <button class="button">Register Device</button>
-    </form>
+  <div style="margin-bottom:15px; margin-top:-10px; display:flex; justify-content:flex-end;">
+    {{! Only show the register button if the user has a 'role' tag set to 'admin'. }}
+    {{#eq experience.user.userTags.role 'admin'}}
+    <div style="margin-right:10px;">
+      <form action="/register">
+        <button class="button">Register Device</button>
+      </form>
+    </div>
+    {{/eq}}
+    <div>
+      <form action="/maintenance-intervals">
+        <button class="button">Maintenance Intervals</button>
+      </form>
+    </div>
   </div>
-  {{/eq}}
+
   {{! Holds the overview map. Rendered using Google Maps. }}
   <div class="device-group">
     <div class="device-group-name">Device Locations</div>
