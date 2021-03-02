@@ -1,0 +1,190 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - description: Starter workflow for building a response to this endpoint
+    enabled: true
+    flowId: ~losant-flow-endpointPostMaintenanceIntervals-13~
+    globals: []
+    id: ~losant-flowVersion-endpointPostMaintenanceIntervals-13~
+    name: Endpoint POST /maintenance-intervals
+    nodes:
+      - config:
+          bodyTemplate: /maintenance-intervals
+          bodyTemplateType: string
+          cookieInfo: []
+          headerInfo: []
+          replyIdPath: ''
+          replyType: redirect
+          responseCodeTemplate: '302'
+        id: SyLfJn-hx
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 280
+          'y': 820
+        outputIds:
+          - - BkhzMc9hl
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: BkhzMc9hl
+        meta:
+          category: output
+          description: ''
+          label: Debug
+          name: debug
+          x: 280
+          'y': 920
+        outputIds: []
+        type: DebugNode
+      - config:
+          destination: working.maintenance_intervals
+          recordDelimiterTemplate: |+
+
+          source: data.body.maintenanceIntervals
+        id: xBn-EuvPkf
+        meta:
+          category: logic
+          description: ''
+          id: xBn-EuvPkf
+          label: 'CSV: Decode'
+          name: csv-decode
+          x: 280
+          'y': 400
+        outputIds:
+          - - C_3QlB0aWc
+        type: CSVDecodeNode
+      - config:
+          dataMethod: payloadPath
+          dataTableIdTemplate: ~losant-dataTable-maintenanceIntervals-1~
+          resultPath: ''
+          rowPayloadPath: working.maintenance_intervals
+        id: c52I4emeSp
+        meta:
+          category: data
+          description: ''
+          id: c52I4emeSp
+          label: 'Table: Insert Rows'
+          name: insert-table-row
+          x: 280
+          'y': 720
+        outputIds:
+          - - SyLfJn-hx
+        type: DataTableInsertRowNode
+      - config:
+          action: truncate
+          params:
+            - name: dataTableId
+              type: string
+              value: ~losant-dataTable-maintenanceIntervals-1~
+          resource: dataTableRows
+        id: C_3QlB0aWc
+        meta:
+          category: data
+          description: ''
+          id: C_3QlB0aWc
+          label: Losant API
+          name: losantapi
+          x: 280
+          'y': 540
+        outputIds:
+          - - c52I4emeSp
+        type: LosantApiNode
+      - config: {}
+        id: Yti6nQzbpu
+        meta:
+          annotationText: >-
+            This API Node is calling the truncate API endpoint to remove all
+            rows from the existing Data Table.
+          category: annotation
+          height: 140
+          label: Note
+          name: note
+          width: 260
+          x: 480
+          'y': 500
+        outputIds: []
+        type: AnnotationNode
+      - config:
+          expression: >-
+            {{experience.user.userTags.role}} === 'admin' &&
+            {{experience.user.experienceGroups.[0].name}} === 'Kanarra
+            Technologies'
+        id: hfrnfjaPFu
+        meta:
+          category: logic
+          description: ''
+          id: hfrnfjaPFu
+          label: Conditional
+          name: conditional
+          x: 180
+          'y': 220
+        outputIds:
+          - - 5QHfRpR2zZ
+          - - xBn-EuvPkf
+        type: ConditionalNode
+      - config: {}
+        id: AUk6IFGb36
+        meta:
+          annotationText: >-
+            Only users with role=admin and members of the Kanarra Technologies
+            group are allowed.
+          category: annotation
+          height: 140
+          label: Note
+          name: note
+          width: 260
+          x: 380
+          'y': 180
+        outputIds: []
+        type: AnnotationNode
+      - config:
+          bodyTemplate: /maintenance-intervals
+          bodyTemplateType: string
+          cookieInfo: []
+          headerInfo: []
+          replyIdPath: ''
+          replyType: redirect
+          responseCodeTemplate: '302'
+        id: 5QHfRpR2zZ
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 80
+          'y': 400
+        outputIds:
+          - - 8eZUDKn9oY
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: 8eZUDKn9oY
+        meta:
+          category: output
+          description: ''
+          label: Debug
+          name: debug
+          x: 80
+          'y': 500
+        outputIds: []
+        type: DebugNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-postMaintenanceIntervals-13~
+        meta:
+          category: trigger
+          description: ''
+          label: Endpoint
+          name: endpoint
+          uiId: H1hL0oZhl
+          x: 180
+          'y': 100
+        outputIds:
+          - - hfrnfjaPFu
+        type: endpoint
+    version: develop
+version: 1

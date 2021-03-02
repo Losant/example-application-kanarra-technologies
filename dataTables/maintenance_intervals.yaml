@@ -1,0 +1,22 @@
+resourceType: DataTable
+resources:
+  - columns:
+      - constraint: required
+        dataType: number
+        name: index
+      - constraint: required
+        dataType: string
+        name: service_schedule
+      - constraint: required
+        dataType: string
+        name: description
+      - constraint: required
+        dataType: number
+        name: condition_in_months
+      - constraint: required
+        dataType: number
+        name: condition_in_hours
+    id: ~losant-dataTable-maintenanceIntervals-1~
+    localFilename: ./maintenance_intervals.csv
+    name: maintenance_intervals
+version: 1

@@ -1,0 +1,200 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - enabled: true
+    flowId: ~losant-flow-endpointGet-2~
+    globals: []
+    id: ~losant-flowVersion-endpointGet-10~
+    name: Endpoint - GET /
+    nodes:
+      - config:
+          bodyTemplate: working
+          bodyTemplateType: path
+          cookieInfo: []
+          headerInfo: []
+          layoutIdTemplate: ''
+          pageIdTemplate: ~losant-experienceView-pageHome-12~
+          replyIdPath: ''
+          replyType: page
+          responseCodeTemplate: ''
+        id: t8OylqAbw6
+        meta:
+          category: output
+          description: ''
+          id: t8OylqAbw6
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 80
+          'y': 460
+        outputIds:
+          - - doFJtc1bfn
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: doFJtc1bfn
+        meta:
+          category: output
+          description: ''
+          id: doFJtc1bfn
+          label: Debug
+          name: debug
+          x: 80
+          'y': 560
+        outputIds: []
+        type: DebugNode
+      - config:
+          idTemplate: '{{experience.user.experienceGroups.[0].id}}'
+          resultPath: working.experienceGroups
+        id: sZLLijpiD1
+        meta:
+          category: experience
+          description: ''
+          id: sZLLijpiD1
+          label: 'Group: Summary'
+          name: group-summary
+          x: 80
+          'y': 140
+        outputIds:
+          - - bKHhyoKkYL
+        type: ExperienceGroupSummaryNode
+      - config:
+          script: |+
+            let selectedGroupIds = [];
+
+            if(Array.isArray(payload.data.query.group)) {
+              selectedGroupIds = payload.data.query.group;
+            } else if(payload.data.query.group !== undefined) {
+              selectedGroupIds = [payload.data.query.group];
+            }
+
+            payload.working.selectedGroupIds = selectedGroupIds;
+
+        id: bKHhyoKkYL
+        meta:
+          category: logic
+          description: ''
+          id: bKHhyoKkYL
+          label: Function
+          name: function
+          x: 80
+          'y': 240
+        outputIds:
+          - - 5AE-JJPOrM
+        type: RawFunctionNode
+      - config:
+          currentItemPath: working.selectedGroupId
+          loopSourcePath: working.selectedGroupIds
+        id: 5AE-JJPOrM
+        meta:
+          category: logic
+          description: ''
+          groupStartX: 200
+          groupStartY: 200
+          id: 5AE-JJPOrM
+          label: Loop
+          name: loop
+          x: 80
+          'y': 340
+        outputIds:
+          - - t8OylqAbw6
+          - - Oie0xXWd3F
+        type: LoopNode
+      - config:
+          loopNodeId: 5AE-JJPOrM
+          shouldBreak: false
+        id: jkfsK5Q977
+        meta:
+          category: loop
+          description: ''
+          groupId: 5AE-JJPOrM
+          id: jkfsK5Q977
+          label: Next
+          name: loop-next
+          x: 200
+          'y': 640
+        outputIds: []
+        type: LoopCapNode
+      - config:
+          findMethod: id
+          idTemplate: '{{working.selectedGroupId.value}}'
+          resultPath: working.selectedGroup
+        id: Oie0xXWd3F
+        meta:
+          category: experience
+          description: ''
+          groupId: 5AE-JJPOrM
+          id: Oie0xXWd3F
+          label: 'Group: Get'
+          name: get-experience-group
+          x: 200
+          'y': 300
+        outputIds:
+          - - 8qtnJqHwX7
+        type: GetExperienceGroupNode
+      - config:
+          destArrayPath: working.selectedGroups
+          rules:
+            - inputTemplate: '{{working.selectedGroup}}'
+              type: push
+          sourceArrayPath: working.selectedGroups
+        id: Z_QmxV5CID
+        meta:
+          category: logic
+          description: ''
+          groupId: 5AE-JJPOrM
+          id: Z_QmxV5CID
+          label: Array
+          name: array
+          x: 200
+          'y': 500
+        outputIds:
+          - - jkfsK5Q977
+        type: ArrayNode
+      - config:
+          attributes:
+            - fuel_level
+            - is_in_faulted_mode
+            - is_in_maintenance_mode
+            - state_description
+            - maintenance_description
+            - fault_description
+          findMethod: experienceGroupId
+          findMultiple: true
+          idTemplate: '{{working.selectedGroup.id}}'
+          includeState: true
+          resultPath: working.selectedGroup.devices
+          resultsPage: '0'
+          resultsPerPage: '100'
+          sortDirection: asc
+          sortField: name
+          tagsAsObject: true
+        id: 8qtnJqHwX7
+        meta:
+          category: data
+          description: ''
+          groupId: 5AE-JJPOrM
+          id: 8qtnJqHwX7
+          label: 'Device: Get'
+          name: get-device
+          x: 200
+          'y': 400
+        outputIds:
+          - - Z_QmxV5CID
+        type: GetDeviceNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-get-4~
+        meta:
+          category: trigger
+          description: ''
+          id: xUhgZy08cj
+          label: Endpoint
+          name: endpoint
+          uiId: xUhgZy08cj
+          x: 80
+          'y': 20
+        outputIds:
+          - - sZLLijpiD1
+        type: endpoint
+    version: develop
+version: 1

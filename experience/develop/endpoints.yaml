@@ -1,0 +1,144 @@
+resourceType: ExperienceEndpoint
+resources:
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-get-4~
+    method: get
+    route: /
+    unauthorizedReply:
+      statusCode: 302
+      type: redirect
+      value: /login
+    version: develop
+  - access: public
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getAbout-8~
+    method: get
+    route: /about
+    staticReply:
+      type: page
+      value: ~losant-experienceView-pageAbout-16~
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getApiDevicesDeviceId-9~
+    method: get
+    route: '/api/devices/{deviceId}'
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getDeviceDetails-1~
+    method: get
+    route: /device-details
+    unauthorizedReply:
+      statusCode: 302
+      type: redirect
+      value: /login
+    version: develop
+  - access: public
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getLogin-3~
+    method: get
+    route: /login
+    staticReply:
+      statusCode: 200
+      type: page
+      value: ~losant-experienceView-pageLogin-13~
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getMaintenanceIntervals-12~
+    method: get
+    route: /maintenance-intervals
+    unauthorizedReply:
+      type: redirect
+      value: /login
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getRegister-5~
+    method: get
+    route: /register
+    staticReply:
+      type: page
+      value: ~losant-experienceView-pageRegister-17~
+    unauthorizedReply:
+      type: redirect
+      value: /login
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getRegisterChooseGroupDeviceId-10~
+    method: get
+    route: '/register-choose-group/{deviceId}'
+    unauthorizedReply:
+      type: redirect
+      value: /login
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-getRegisterDeviceId-7~
+    method: get
+    route: '/register/{deviceId}'
+    unauthorizedReply:
+      type: redirect
+      value: /login
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-post-2~
+    method: post
+    route: /
+    unauthorizedReply:
+      statusCode: 302
+      type: redirect
+      value: /login
+    version: develop
+  - access: public
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-postLogin-0~
+    method: post
+    route: /login
+    version: develop
+  - access: group
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-postMaintenanceIntervals-13~
+    method: post
+    route: /maintenance-intervals
+    unauthorizedReply:
+      type: redirect
+      value: /login
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-postRegister-6~
+    method: post
+    route: /register
+    unauthorizedReply:
+      type: redirect
+      value: /login
+    version: develop
+  - access: authenticated
+    enabled: true
+    endpointTags: {}
+    id: ~losant-experienceEndpoint-postRegisterChooseGroupDeviceId-11~
+    method: post
+    route: '/register-choose-group/{deviceId}'
+    unauthorizedReply:
+      type: redirect
+      value: /login
+    version: develop
+version: 1

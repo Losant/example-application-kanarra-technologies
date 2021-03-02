@@ -1,0 +1,65 @@
+resourceType: Flow
+resources:
+  - customNodeConfig:
+      fields:
+        - description: ''
+          id: f
+          label: Temperature
+          required: true
+          type: numberTemplate
+      outputCount: 1
+      resultMode: required
+    customNodeSupports:
+      - cloud
+    description: ''
+    flowClass: customNode
+    globals: []
+    iconData: >-
+      data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI2ZmZmZmZiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0xOS4zNSAxMC4wNEMxOC42NyA2LjU5IDE1LjY0IDQgMTIgNCA5LjExIDQgNi42IDUuNjQgNS4zNSA4LjA0IDIuMzQgOC4zNiAwIDEwLjkxIDAgMTRjMCAzLjMxIDIuNjkgNiA2IDZoMTNjMi43NiAwIDUtMi4yNCA1LTUgMC0yLjY0LTIuMDUtNC43OC00LjY1LTQuOTZ6Ii8+PC9zdmc+
+    id: ~losant-flow-fC-11~
+    name: F -> C
+    nodes:
+      - config:
+          branchIndexTemplate: 0
+          resultSourcePath: data
+        id: 8JieHtgegC
+        meta:
+          category: customNodeEnd
+          description: End the Custom Node run
+          label: Output
+          name: custom-node-end-single
+          x: 260
+          'y': 480
+        outputIds: []
+        type: CustomNodeCapNode
+      - config:
+          statements:
+            - expression: '{{data.f}} + 10'
+              resultPath: data.c
+        id: TYLoTIAzo9
+        meta:
+          category: logic
+          description: ''
+          id: TYLoTIAzo9
+          label: Math
+          name: math
+          x: 260
+          'y': 260
+        outputIds:
+          - - 8JieHtgegC
+        type: MathNode
+    triggers:
+      - config: {}
+        key: customNodeStart
+        meta:
+          category: trigger
+          description: The Custom Node fires here ...
+          label: 'Start: F -> C'
+          name: customNodeStart
+          uiId: SywHdN5P6W
+          x: 260
+          'y': 80
+        outputIds:
+          - - TYLoTIAzo9
+        type: customNodeStart
+version: 1

@@ -1,0 +1,96 @@
+resourceType: FlowVersion
+resources:
+  - enabled: true
+    flowId: ~losant-flow-handleRegisterButton-8~
+    globals: []
+    id: ~losant-flowVersion-v100-14~
+    nodes:
+      - config:
+          expression: '{{data.register-button}} === 1'
+        id: 2Z8zWlBm_j
+        meta:
+          category: logic
+          description: ''
+          id: 2Z8zWlBm_j
+          label: Conditional
+          name: conditional
+          x: 120
+          'y': 220
+        outputIds:
+          - []
+          - - yrVYJmNxb1
+        type: ConditionalNode
+      - config:
+          message: ''
+          property: ''
+        id: Jow1lcnCHf
+        meta:
+          category: output
+          description: ''
+          id: Jow1lcnCHf
+          label: Debug
+          name: debug
+          x: 180
+          'y': 580
+        outputIds: []
+        type: DebugNode
+      - config:
+          expression: >-
+            {{deviceTags.registerUserId.[0]}} !== undefined &&
+            ({{currentDateTime 'X'}} - {{deviceTags.registerStartTime.[0]}}) <
+            120
+        id: yrVYJmNxb1
+        meta:
+          category: logic
+          description: ''
+          id: yrVYJmNxb1
+          label: Conditional
+          name: conditional
+          x: 180
+          'y': 360
+        outputIds:
+          - - Jow1lcnCHf
+          - - xlCKrAI3fT
+        type: ConditionalNode
+      - config:
+          dataMethod: individualFields
+          descriptionTemplate: ''
+          deviceAttributes: []
+          deviceClassTemplate: ''
+          deviceTags:
+            - keyTemplate: registerReady
+              valueTemplate: 'true'
+          gatewayIdTemplate: ''
+          idTemplate: '{{triggerId}}'
+          nameTemplate: ''
+          resultPath: ''
+          tagsAsObject: false
+        id: xlCKrAI3fT
+        meta:
+          category: data
+          description: ''
+          id: xlCKrAI3fT
+          label: 'Device: Update'
+          name: update-device
+          x: 300
+          'y': 480
+        outputIds:
+          - - Jow1lcnCHf
+        type: UpdateDeviceNode
+    triggers:
+      - config: {}
+        key: model/
+        meta:
+          category: trigger
+          description: ''
+          id: n6aJchGtGd
+          label: 'Device: State'
+          name: deviceIdsTags
+          uiId: n6aJchGtGd
+          x: 120
+          'y': 100
+        outputIds:
+          - - 2Z8zWlBm_j
+        type: deviceTag
+    version: v1.0.0
+version: 1

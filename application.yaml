@@ -1,0 +1,20 @@
+resourceType: Application
+resources:
+  - blobUrlTTL: 86400
+    description: >-
+      This application demonstrates a nested, multi-tenant, experience built and
+      hosted entirely within the Losant platform. 
+    filesPath: ./files
+    globals:
+      - cloudOnly: true
+        description: ''
+        json: '"files.onlosant.com"'
+        key: filesRoot
+      - cloudOnly: true
+        description: ''
+        json: '"YOUR_API_KEY"'
+        key: googleMapsAPIKey
+    id: ~losant-application-kanarraDigital-0~
+    name: Kanarra Digital
+    readmePath: ./README.md
+version: 1

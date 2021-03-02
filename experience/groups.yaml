@@ -1,0 +1,268 @@
+resourceType: ExperienceGroupTree
+resources:
+  - children:
+      - children:
+          - children:
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: San Bruno Medical Offices
+                groupTags: {}
+                id: ~losant-experienceGroup-sanBrunoMedicalOffices-30~
+                name: San Bruno Medical Offices
+                parentId: ~losant-experienceGroup-californiaNorthern-16~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Sneath Lane Medical Offices
+                groupTags: {}
+                id: ~losant-experienceGroup-sneathLaneMedicalOffices-29~
+                name: Sneath Lane Medical Offices
+                parentId: ~losant-experienceGroup-californiaNorthern-16~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: South San Francisco Medical Center
+                groupTags: {}
+                id: ~losant-experienceGroup-southSanFranciscoMedicalCenter-32~
+                name: South San Francisco Medical Center
+                parentId: ~losant-experienceGroup-californiaNorthern-16~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Vacaville Medical Center
+                groupTags: {}
+                id: ~losant-experienceGroup-vacavilleMedicalCenter-28~
+                name: Vacaville Medical Center
+                parentId: ~losant-experienceGroup-californiaNorthern-16~
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-californiaNorthern-16~
+            name: California - Northern
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-californiaSouthern-6~
+            name: California - Southern
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-coloradoDenverBoulderMountain-22~
+            name: Colorado - Denver/Boulder/Mountain
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-coloradoNorthernColorado-2~
+            name: Colorado - Northern Colorado
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-coloradoSouthernColorado-4~
+            name: Colorado - Southern Colorado
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-georgia-26~
+            name: Georgia
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children:
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Kona Medical Office
+                groupTags: {}
+                id: ~losant-experienceGroup-konaMedicalOffice-31~
+                name: Kona Medical Office
+                parentId: ~losant-experienceGroup-hawaii-5~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Moanalua Medical Center
+                groupTags: {}
+                id: ~losant-experienceGroup-moanaluaMedicalCenter-33~
+                name: Moanalua Medical Center
+                parentId: ~losant-experienceGroup-hawaii-5~
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-hawaii-5~
+            name: Hawaii
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-marylandVirginiaWashingtonDC-13~
+            name: Maryland/Virginia/Washington D.C.
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-oregonSwWashington-12~
+            name: Oregon/SW Washington
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-washington-1~
+            name: Washington
+            parentId: ~losant-experienceGroup-sadlerIsberg-3~
+        deviceIds: []
+        deviceTags: []
+        groupTags: {}
+        id: ~losant-experienceGroup-sadlerIsberg-3~
+        name: Sadler-Isberg
+        parentId: ~losant-experienceGroup-kanarraTechnologies-9~
+      - children:
+          - children:
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Mercy Health - Anderson Hospital
+                groupTags: {}
+                id: ~losant-experienceGroup-mercyHealthAndersonHospital-7~
+                name: Mercy Health - Anderson Hospital
+                parentId: ~losant-experienceGroup-cincinnati-0~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Mercy Health - Clermont Hospital
+                groupTags: {}
+                id: ~losant-experienceGroup-mercyHealthClermontHospital-17~
+                name: Mercy Health - Clermont Hospital
+                parentId: ~losant-experienceGroup-cincinnati-0~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Mercy Health - Fairfield Hospital
+                groupTags: {}
+                id: ~losant-experienceGroup-mercyHealthFairfieldHospital-23~
+                name: Mercy Health - Fairfield Hospital
+                parentId: ~losant-experienceGroup-cincinnati-0~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Mercy Health - West Hospital
+                groupTags: {}
+                id: ~losant-experienceGroup-mercyHealthWestHospital-8~
+                name: Mercy Health - West Hospital
+                parentId: ~losant-experienceGroup-cincinnati-0~
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: The Jewish Hospital - Mercy Health
+                groupTags: {}
+                id: ~losant-experienceGroup-theJewishHospitalMercyHealth-27~
+                name: The Jewish Hospital - Mercy Health
+                parentId: ~losant-experienceGroup-cincinnati-0~
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-cincinnati-0~
+            name: Cincinnati
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+          - children:
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Mercy Health - Marcum and Wallace Hospital
+                groupTags: {}
+                id: >-
+                  ~losant-experienceGroup-mercyHealthMarcumAndWallaceHospital-14~
+                name: Mercy Health - Marcum and Wallace Hospital
+                parentId: ~losant-experienceGroup-irvin-20~
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-irvin-20~
+            name: Irvin
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+          - children:
+              - children: []
+                deviceIds: []
+                deviceTags:
+                  - key: group
+                    value: Mercy Health - St. Rita's Medical Center
+                groupTags: {}
+                id: ~losant-experienceGroup-mercyHealthStRitasMedicalCenter-18~
+                name: Mercy Health - St. Rita's Medical Center
+                parentId: ~losant-experienceGroup-lima-19~
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-lima-19~
+            name: Lima
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-lorain-11~
+            name: Lorain
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-paducah-25~
+            name: Paducah
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-springfield-21~
+            name: Springfield
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-toledo-24~
+            name: Toledo
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+          - children: []
+            deviceIds: []
+            deviceTags: []
+            groupTags: {}
+            id: ~losant-experienceGroup-youngstown-15~
+            name: Youngstown
+            parentId: ~losant-experienceGroup-tektonHealth-10~
+        deviceIds: []
+        deviceTags: []
+        groupTags: {}
+        id: ~losant-experienceGroup-tektonHealth-10~
+        name: Tekton Health
+        parentId: ~losant-experienceGroup-kanarraTechnologies-9~
+    deviceIds: []
+    deviceTags: []
+    groupTags: {}
+    id: ~losant-experienceGroup-kanarraTechnologies-9~
+    name: Kanarra Technologies
+    parentId: null
+version: 1

@@ -1,0 +1,73 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - description: Starter workflow for building a response to this endpoint
+    enabled: true
+    flowId: ~losant-flow-endpointPost-1~
+    globals: []
+    id: ~losant-flowVersion-endpointPost-1~
+    name: Endpoint - POST /
+    nodes:
+      - config:
+          bodyTemplate: >-
+            /?{{#each data.body.group}}group={{this}}{{#ne @last
+            true}}&{{/ne}}{{/each}}
+          bodyTemplateType: string
+          cookieInfo: []
+          headerInfo: []
+          replyIdPath: ''
+          replyType: redirect
+          responseCodeTemplate: '302'
+        id: SyLfJn-hx
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 100
+          'y': 380
+        outputIds:
+          - - BkhzMc9hl
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: BkhzMc9hl
+        meta:
+          category: output
+          description: ''
+          label: Debug
+          name: debug
+          x: 100
+          'y': 500
+        outputIds: []
+        type: DebugNode
+      - config:
+          script: "if(!payload.data.body.group) {\n  payload.data.body.group = [];\n}\nelse if(!Array.isArray(payload.data.body.group)) {\n\tpayload.data.body.group = [payload.data.body.group];\n}"
+        id: lOpGOTdZq_
+        meta:
+          category: logic
+          description: ''
+          id: lOpGOTdZq_
+          label: Function
+          name: function
+          x: 100
+          'y': 220
+        outputIds:
+          - - SyLfJn-hx
+        type: RawFunctionNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-post-2~
+        meta:
+          category: trigger
+          description: ''
+          label: Endpoint
+          name: endpoint
+          uiId: H1hL0oZhl
+          x: 100
+          'y': 100
+        outputIds:
+          - - lOpGOTdZq_
+        type: endpoint
+    version: develop
+version: 1

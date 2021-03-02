@@ -1,0 +1,92 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - description: Starter workflow for building a response to this endpoint
+    enabled: true
+    flowId: ~losant-flow-endpointGetRegisterChooseGroupDeviceId-9~
+    globals: []
+    id: ~losant-flowVersion-endpointGetRegisterChooseGroupDeviceId-7~
+    name: 'Endpoint - GET /register-choose-group/{deviceId}'
+    nodes:
+      - config:
+          bodyTemplate: working
+          bodyTemplateType: path
+          cookieInfo: []
+          headerInfo: []
+          layoutIdTemplate: ''
+          pageIdTemplate: ~losant-experienceView-pageRegisterChooseGroup-20~
+          replyIdPath: ''
+          replyType: page
+          responseCodeTemplate: '200'
+        id: SyLfJn-hx
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 100
+          'y': 480
+        outputIds:
+          - - BkhzMc9hl
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: BkhzMc9hl
+        meta:
+          category: output
+          description: ''
+          label: Debug
+          name: debug
+          x: 100
+          'y': 640
+        outputIds: []
+        type: DebugNode
+      - config:
+          idTemplate: '{{experience.user.experienceGroups.[0].id}}'
+          resultPath: working.experienceGroups
+        id: I1XNk43YM6
+        meta:
+          category: experience
+          description: ''
+          id: I1XNk43YM6
+          label: 'Group: Summary'
+          name: group-summary
+          x: 100
+          'y': 240
+        outputIds:
+          - - cH_YeXK74V
+        type: ExperienceGroupSummaryNode
+      - config:
+          findMethod: id
+          idTemplate: '{{data.params.deviceId}}'
+          includeState: false
+          resultPath: working.device
+          tagsAsObject: true
+        id: cH_YeXK74V
+        meta:
+          category: data
+          description: ''
+          id: cH_YeXK74V
+          label: 'Device: Get'
+          name: get-device
+          x: 100
+          'y': 340
+        outputIds:
+          - - SyLfJn-hx
+        type: GetDeviceNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-getRegisterChooseGroupDeviceId-10~
+        meta:
+          category: trigger
+          description: ''
+          label: Endpoint
+          name: endpoint
+          uiId: H1hL0oZhl
+          x: 100
+          'y': 100
+        outputIds:
+          - - I1XNk43YM6
+        type: endpoint
+    version: develop
+version: 1

@@ -1,0 +1,10 @@
+resourceType: ExperienceView
+resources:
+  - description: ''
+    id: ~losant-experienceView-layoutDeviceDetails-5~
+    localFilename: ./layout-device-details.hbs
+    name: layout-device-details
+    version: develop
+    viewTags: {}
+    viewType: layout
+version: 1

@@ -1,0 +1,140 @@
+resourceType: ExperienceView
+resources:
+  - id: ~losant-experienceView-componentDeviceBlock-24~
+    localFilename: ./component-device-block.hbs
+    name: component-device-block
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-componentDeviceGroup-21~
+    localFilename: ./component-device-group.hbs
+    name: component-device-group
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-componentDeviceGroups-22~
+    localFilename: ./component-device-groups.hbs
+    name: component-device-groups
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-componentGroupChecklist-25~
+    localFilename: ./component-group-checklist.hbs
+    name: component-group-checklist
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-componentSidebar-23~
+    localFilename: ./component-sidebar.hbs
+    name: component-sidebar
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-componentSubgroupChecklist-26~
+    localFilename: ./component-subgroup-checklist.hbs
+    name: component-subgroup-checklist
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-cssDeviceGroups-9~
+    localFilename: ./css-device-groups.hbs
+    name: css-device-groups
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-cssExperienceGroupsList-8~
+    localFilename: ./css-experience-groups-list.hbs
+    name: css-experience-groups-list
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-cssGlobalReset-7~
+    localFilename: ./css-global-reset.hbs
+    name: css-global-reset
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-cssGlobalStyles-6~
+    localFilename: ./css-global-styles.hbs
+    name: css-global-styles
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-cssLayoutDeviceDetails-1~
+    localFilename: ./css-layout-device-details.hbs
+    name: css-layout-device-details
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-cssPageAbout-15~
+    localFilename: ./css-page-about.hbs
+    name: css-page-about
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-cssPageHome-27~
+    localFilename: ./css-page-home.hbs
+    name: css-page-home
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-cssPageLogin-3~
+    localFilename: ./css-page-login.hbs
+    name: css-page-login
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-cssPageMaintenanceIntervals-33~
+    localFilename: ./css-page-maintenance-intervals.hbs
+    name: css-page-maintenance-intervals
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-cssPanelPage-14~
+    localFilename: ./css-panel-page.hbs
+    name: css-panel-page
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-cssSidebar-0~
+    localFilename: ./css-sidebar.hbs
+    name: css-sidebar
+    version: develop
+    viewTags: {}
+    viewType: component
+  - id: ~losant-experienceView-jsCountdown-19~
+    localFilename: ./js-countdown.hbs
+    name: js-countdown
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-jsDeviceBlock-4~
+    localFilename: ./js-device-block.hbs
+    name: js-device-block
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-jsExperienceGroupsList-2~
+    localFilename: ./js-experience-groups-list.hbs
+    name: js-experience-groups-list
+    version: develop
+    viewTags: {}
+    viewType: component
+  - description: ''
+    id: ~losant-experienceView-jsLayoutDeviceDetails-10~
+    localFilename: ./js-layout-device-details.hbs
+    name: js-layout-device-details
+    version: develop
+    viewTags: {}
+    viewType: component
+version: 1

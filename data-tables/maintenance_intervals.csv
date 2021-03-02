@@ -1,9 +1,0 @@
-id,index,service_schedule,description,condition_in_months,condition_in_hours,updatedAt,createdAt
-5cd30c5ad8920a0009bd5ef2,1,A,Inspect Accessory Drive,12,100,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z
-5cd30c5ad8920a0009bd5ef3,2,A,Coolant Change & Flush,12,100,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z
-5cd30c5ad8920a0009bd5ef4,3,A,Inspect Spark Plugs,12,100,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z
-5cd30c5ad8920a0009bd5ef5,4,A,Change Oil & Filter,12,100,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z
-5cd30c5ad8920a0009bd5ef6,5,A,Inspect Battery Alert,12,100,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z
-5cd30c5ad8920a0009bd5ef7,6,A,Change / Inspect Air Filter,12,100,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z
-5cd30c5ad8920a0009bd5ef8,7,A,Clean / Inspect Air Inlet & Exhaust,6,50,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z
-5cd30c5ad8920a0009bd5ef9,8,B,Change / Inspect spark plugs,24,250,2019-05-08T17:05:30.405Z,2019-05-08T17:05:30.405Z

@@ -1,0 +1,81 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - description: Starter workflow for building a response to this endpoint
+    enabled: true
+    flowId: ~losant-flow-endpointGetMaintenanceIntervals-12~
+    globals: []
+    id: ~losant-flowVersion-endpointGetMaintenanceIntervals-12~
+    name: Endpoint GET /maintenance-intervals
+    nodes:
+      - config:
+          bodyTemplate: working
+          bodyTemplateType: path
+          cookieInfo: []
+          headerInfo: []
+          layoutIdTemplate: ''
+          pageIdTemplate: ~losant-experienceView-pageMaintenanceIntervals-29~
+          replyIdPath: ''
+          replyType: page
+          responseCodeTemplate: '200'
+        id: SyLfJn-hx
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 100
+          'y': 360
+        outputIds:
+          - - BkhzMc9hl
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: BkhzMc9hl
+        meta:
+          category: output
+          description: ''
+          label: Debug
+          name: debug
+          x: 100
+          'y': 480
+        outputIds: []
+        type: DebugNode
+      - config:
+          dataTableIdTemplate: ~losant-dataTable-maintenanceIntervals-1~
+          includeFieldsTemplate: ''
+          limitTemplate: ''
+          offsetTemplate: ''
+          queryTemplate: ''
+          resultPath: working.maintenanceIntervals
+          sortColumnTemplate: ''
+          sortDirectionTemplate: ''
+        id: ZHcokb5WAr
+        meta:
+          category: data
+          description: ''
+          id: ZHcokb5WAr
+          label: 'Table: Get Rows'
+          name: get-table-rows
+          queryMode: $or
+          x: 100
+          'y': 240
+        outputIds:
+          - - SyLfJn-hx
+        type: DataTableQueryNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-getMaintenanceIntervals-12~
+        meta:
+          category: trigger
+          description: ''
+          label: Endpoint
+          name: endpoint
+          uiId: H1hL0oZhl
+          x: 100
+          'y': 100
+        outputIds:
+          - - ZHcokb5WAr
+        type: endpoint
+    version: develop
+version: 1

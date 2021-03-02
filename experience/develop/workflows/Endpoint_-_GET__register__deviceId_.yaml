@@ -1,0 +1,97 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - enabled: true
+    flowId: ~losant-flow-endpointGetRegisterDeviceId-5~
+    globals: []
+    id: ~losant-flowVersion-endpointGetRegisterDeviceId-4~
+    name: 'Endpoint - GET /register/{deviceId}'
+    nodes:
+      - config:
+          bodyTemplate: working
+          bodyTemplateType: path
+          cookieInfo: []
+          headerInfo: []
+          layoutIdTemplate: ''
+          pageIdTemplate: ~losant-experienceView-pageRegisterCountdown-18~
+          replyIdPath: ''
+          replyType: page
+          responseCodeTemplate: ''
+        id: 6inF59HtMW
+        meta:
+          category: output
+          description: ''
+          id: 6inF59HtMW
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 160
+          'y': 460
+        outputIds:
+          - - _b6ukmxIkT
+        type: EndpointReplyNode
+      - config:
+          findMethod: id
+          idTemplate: '{{data.params.deviceId}}'
+          includeState: false
+          resultPath: working.device
+          tagsAsObject: true
+        id: _fY972jxYo
+        meta:
+          category: data
+          description: ''
+          id: _fY972jxYo
+          label: 'Device: Get'
+          name: get-device
+          x: 160
+          'y': 220
+        outputIds:
+          - - 2qkGScCzKB
+        type: GetDeviceNode
+      - config:
+          message: ''
+          property: ''
+        id: _b6ukmxIkT
+        meta:
+          category: output
+          description: ''
+          id: _b6ukmxIkT
+          label: Debug
+          name: debug
+          x: 160
+          'y': 560
+        outputIds: []
+        type: DebugNode
+      - config:
+          rules:
+            - destination: working.currentTime
+              type: set
+              valueTemplate: '{{currentDateTime ''X''}}'
+              valueTemplateType: json
+        id: 2qkGScCzKB
+        meta:
+          category: logic
+          description: ''
+          id: 2qkGScCzKB
+          label: Mutate
+          name: mutate
+          x: 160
+          'y': 340
+        outputIds:
+          - - 6inF59HtMW
+        type: MutateNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-getRegisterDeviceId-7~
+        meta:
+          category: trigger
+          description: ''
+          id: j5wPN-VmKa
+          label: Endpoint
+          name: endpoint
+          uiId: j5wPN-VmKa
+          x: 160
+          'y': 80
+        outputIds:
+          - - _fY972jxYo
+        type: endpoint
+    version: develop
+version: 1

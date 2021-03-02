@@ -1,0 +1,9 @@
+index,service_schedule,description,condition_in_months,condition_in_hours
+1,A,Inspect Accessory Drive,12,100
+2,A,Coolant Change & Flush,12,100
+3,A,Inspect Spark Plugs,12,100
+4,A,Change Oil & Filter,12,100
+5,A,Inspect Battery Alert,12,100
+6,A,Change / Inspect Air Filter,12,100
+7,A,Clean / Inspect Air Inlet & Exhaust,6,50
+8,B,Change / Inspect spark plugs,24,250

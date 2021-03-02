@@ -1,0 +1,51 @@
+resourceType: ExperienceUser
+resources:
+  - email: california-northern@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-californiaNorthern-16~
+    id: ~losant-experienceUser-californiaNorthernExampleCom-5~
+    userTags:
+      role: admin
+  - email: kanarra-admin@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-kanarraTechnologies-9~
+    id: ~losant-experienceUser-kanarraAdminExampleCom-7~
+    userTags:
+      role: admin
+  - email: kanarra@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-kanarraTechnologies-9~
+    id: ~losant-experienceUser-kanarraExampleCom-1~
+    userTags: {}
+  - email: sadler-isberg@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-sadlerIsberg-3~
+    id: ~losant-experienceUser-sadlerIsbergExampleCom-0~
+    userTags: {}
+  - email: san-bruno-medical-offices@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-sanBrunoMedicalOffices-30~
+    id: ~losant-experienceUser-sanBrunoMedicalOfficesExampleCom-4~
+    userTags: {}
+  - email: sneath-lane-medical-offices@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-sneathLaneMedicalOffices-29~
+    id: ~losant-experienceUser-sneathLaneMedicalOfficesExampleCom-2~
+    userTags: {}
+  - email: south-san-francisco-medical-center@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-southSanFranciscoMedicalCenter-32~
+    id: ~losant-experienceUser-southSanFranciscoMedicalCenterExampleCom-6~
+    userTags: {}
+  - email: system-admin@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-kanarraTechnologies-9~
+    id: ~losant-experienceUser-systemAdminExampleCom-8~
+    userTags:
+      role: admin
+  - email: vacaville-medical-center@example.com
+    experienceGroupIds:
+      - ~losant-experienceGroup-vacavilleMedicalCenter-28~
+    id: ~losant-experienceUser-vacavilleMedicalCenterExampleCom-3~
+    userTags: {}
+version: 1

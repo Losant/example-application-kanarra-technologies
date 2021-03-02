@@ -1,0 +1,100 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - description: Starter workflow for building a response to this endpoint
+    enabled: true
+    flowId: ~losant-flow-endpointPostLogin-0~
+    globals: []
+    id: ~losant-flowVersion-endpointPostLogin-0~
+    name: Endpoint - POST /login
+    nodes:
+      - config:
+          bodyTemplate: '/?group={{working.user.experienceGroups.[0].id}}'
+          bodyTemplateType: string
+          cookieInfo:
+            - maxAgeTemplate: ''
+              nameTemplate: authorization
+              pathTemplate: ''
+              valueTemplate: '{{working.token}}'
+          headerInfo: []
+          replyIdPath: ''
+          replyType: redirect
+          responseCodeTemplate: '302'
+        id: SyLfJn-hx
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 200
+          'y': 400
+        outputIds:
+          - - BkhzMc9hl
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: BkhzMc9hl
+        meta:
+          category: output
+          description: ''
+          label: Debug
+          name: debug
+          x: 100
+          'y': 560
+        outputIds: []
+        type: DebugNode
+      - config:
+          emailTemplate: '{{data.body.email}}'
+          invalidateExistingTokens: false
+          passwordTemplate: '{{data.body.password}}'
+          tokenResultPath: working.token
+          ttlTemplate: ''
+          userResultPath: working.user
+        id: Cc3dlGCPrU
+        meta:
+          category: experience
+          description: ''
+          id: Cc3dlGCPrU
+          label: Authenticate
+          name: experience-user-auth
+          x: 100
+          'y': 240
+        outputIds:
+          - - Q5PJ4qwy-P
+          - - SyLfJn-hx
+        type: ExperienceUserAuthNode
+      - config:
+          bodyTemplate: /login?invalid=true
+          bodyTemplateType: string
+          cookieInfo: []
+          headerInfo: []
+          replyIdPath: ''
+          replyType: redirect
+          responseCodeTemplate: '302'
+        id: Q5PJ4qwy-P
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 0
+          'y': 400
+        outputIds:
+          - - BkhzMc9hl
+        type: EndpointReplyNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-postLogin-0~
+        meta:
+          category: trigger
+          description: ''
+          label: Endpoint
+          name: endpoint
+          uiId: H1hL0oZhl
+          x: 100
+          'y': 100
+        outputIds:
+          - - Cc3dlGCPrU
+        type: endpoint
+    version: develop
+version: 1

@@ -1,0 +1,56 @@
+resourceType: ExperienceView
+resources:
+  - description: ''
+    id: ~losant-experienceView-pageAbout-16~
+    localFilename: ./page-about.hbs
+    name: page-about
+    version: develop
+    viewTags: {}
+    viewType: page
+  - description: ''
+    id: ~losant-experienceView-pageDeviceDetails-11~
+    layoutId: ~losant-experienceView-layoutDeviceDetails-5~
+    localFilename: ./page-device-details.hbs
+    name: page-device-details
+    version: develop
+    viewTags: {}
+    viewType: page
+  - description: ''
+    id: ~losant-experienceView-pageHome-12~
+    localFilename: ./page-home.hbs
+    name: page-home
+    version: develop
+    viewTags: {}
+    viewType: page
+  - description: ''
+    id: ~losant-experienceView-pageLogin-13~
+    localFilename: ./page-login.hbs
+    name: page-login
+    version: develop
+    viewTags: {}
+    viewType: page
+  - id: ~losant-experienceView-pageMaintenanceIntervals-29~
+    localFilename: ./page-maintenance-intervals.hbs
+    name: page-maintenance-intervals
+    version: develop
+    viewTags: {}
+    viewType: page
+  - id: ~losant-experienceView-pageRegister-17~
+    localFilename: ./page-register.hbs
+    name: page-register
+    version: develop
+    viewTags: {}
+    viewType: page
+  - id: ~losant-experienceView-pageRegisterChooseGroup-20~
+    localFilename: ./page-register-choose-group.hbs
+    name: page-register-choose-group
+    version: develop
+    viewTags: {}
+    viewType: page
+  - id: ~losant-experienceView-pageRegisterCountdown-18~
+    localFilename: ./page-register-countdown.hbs
+    name: page-register-countdown
+    version: develop
+    viewTags: {}
+    viewType: page
+version: 1

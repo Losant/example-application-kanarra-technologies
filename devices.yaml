@@ -1,0 +1,2435 @@
+resourceType: DeviceTree
+resources:
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+      - attributeTags: {}
+        dataType: number
+        name: register-button
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-000000-32~
+    name: '000000'
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: '000000'
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.179677,-84.6037696'
+      - key: group
+        value: Vacaville Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        description: ''
+        name: location
+      - attributeTags: {}
+        dataType: string
+        description: ''
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        description: ''
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        description: ''
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        description: ''
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-4A4HnQe2JfUp-22~
+    name: 4A4HNQe2jfUP
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: 4A4HNQe2jfUP
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.179677,-84.6037696'
+      - key: group
+        value: Mercy Health - West Hospital
+      - key: batteryMaintenance
+        value: '1'
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-5CsqyHaGdlBn-2~
+    name: 5CsqyHaGDLBn
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: 5CsqyHaGDLBn
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6307885,-122.4184834'
+      - key: group
+        value: San Bruno Medical Offices
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-7S3JbqTjLSws-16~
+    name: 7S3JBQTjLSws
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: 7S3JBQTjLSws
+      - key: model
+        value: SG080
+      - key: image
+        value: /device-images/SG080.png
+      - key: location
+        value: '38.3893452,-121.9391401'
+      - key: group
+        value: Vacaville Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-8MpPVzN3RwbX-15~
+    name: 8mpPVzN3RwbX
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: 8mpPVzN3RwbX
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6340011,-122.4257603'
+      - key: group
+        value: Sneath Lane Medical Offices
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-8ZnqpAfPUkUd-20~
+    name: 8znqpAfPUkUd
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: 8znqpAfPUkUd
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.3126283,-84.5173035'
+      - key: group
+        value: Mercy Health - Fairfield Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-a4PEwhtTtNrt-28~
+    name: A4pEWHTTtNrt
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: A4pEWHTTtNrt
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '37.7061212,-83.9772659'
+      - key: group
+        value: Mercy Health - Marcum and Wallace Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-bnRpc8Qy6Mdf-6~
+    name: BNRpc8qy6Mdf
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: BNRpc8qy6Mdf
+      - key: model
+        value: SG080
+      - key: image
+        value: /device-images/SG080.png
+      - key: location
+        value: '38.3893452,-121.9391401'
+      - key: group
+        value: Vacaville Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-cysk2BfRBwpK-18~
+    name: Cysk2bfRBwpK
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: Cysk2bfRBwpK
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '19.674578,-156.0169291'
+      - key: group
+        value: Kona Medical Office
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-eycjYrdSyG4X-25~
+    name: EycjYRDSyG4X
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: EycjYRDSyG4X
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.2059813,-84.3810305'
+      - key: group
+        value: The Jewish Hospital - Mercy Health
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-fbEfu2AmsRBc-30~
+    name: FbEFU2amsRBc
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: FbEFU2amsRBc
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '37.7061212,-83.9772659'
+      - key: group
+        value: Mercy Health - Marcum and Wallace Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-g4U5ZAaNyRzj-19~
+    name: G4U5zAaNYRzj
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: G4U5zAaNYRzj
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6340011,-122.4257603'
+      - key: group
+        value: Sneath Lane Medical Offices
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-gaYy9GdE6UwB-7~
+    name: GaYY9gdE6uwB
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: GaYY9gdE6uwB
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.0856971,-84.348906'
+      - key: group
+        value: Mercy Health - Anderson Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-kau37FFxWnPr-17~
+    name: Kau37fFXWnPR
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: Kau37fFXWnPR
+      - key: model
+        value: SG080
+      - key: image
+        value: /device-images/SG080.png
+      - key: location
+        value: '38.3893452,-121.9391401'
+      - key: group
+        value: Vacaville Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-kndMcqg85Zp4-5~
+    name: KndMCQG85Zp4
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: KndMCQG85Zp4
+      - key: model
+        value: SG080
+      - key: image
+        value: /device-images/SG080.png
+      - key: location
+        value: '38.3893452,-121.9391401'
+      - key: group
+        value: Vacaville Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-kuSyDg3BX87E-14~
+    name: KuSyDg3bX87E
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: KuSyDg3bX87E
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6752352,-122.4589664'
+      - key: group
+        value: South San Francisco Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-lhhQn2QuBuDx-29~
+    name: LhhQn2quBUDx
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: LhhQn2quBUDx
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.2059813,-84.3810305'
+      - key: group
+        value: The Jewish Hospital - Mercy Health
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-mzgl9YsVwsrx-4~
+    name: MZGL9ysVwsrx
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: MZGL9ysVwsrx
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.0799246,-84.1446679'
+      - key: group
+        value: Mercy Health - Clermont Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-qkq8EbtBEc26-27~
+    name: QKQ8EbtBEc26
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: QKQ8EbtBEc26
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '40.7411999,-84.1181147'
+      - key: group
+        value: Mercy Health - St. Rita's Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-qPnDv4JayzQc-1~
+    name: QPnDV4jayzQC
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: QPnDV4jayzQC
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '21.3629627,-157.9019451'
+      - key: group
+        value: Moanalua Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-rQwPxjzfg9P2-11~
+    name: RQwPXJZFG9P2
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: RQwPXJZFG9P2
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6307885,-122.4184834'
+      - key: group
+        value: San Bruno Medical Offices
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-t5SHgcJVe8Lz-8~
+    name: T5sHgcJVe8LZ
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: T5sHgcJVe8LZ
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6752352,-122.4589664'
+      - key: group
+        value: South San Francisco Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-vyJr43LpMfeU-9~
+    name: VyJr43LPMfeU
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: VyJr43LPMfeU
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '19.674578,-156.0169291'
+      - key: group
+        value: Kona Medical Office
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-wNhUdbNmnDfW-0~
+    name: WNhUDBNmnDfW
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: WNhUDBNmnDfW
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.0799246,-84.1446679'
+      - key: group
+        value: Mercy Health - Clermont Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-xgV8HLeHdHp2-31~
+    name: XgV8hLeHDHp2
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: XgV8hLeHDHp2
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.179677,-84.6037696'
+      - key: group
+        value: Mercy Health - West Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-ydp8AcZGtTz4-12~
+    name: Ydp8acZGtTz4
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: Ydp8acZGtTz4
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.0856971,-84.348906'
+      - key: group
+        value: Mercy Health - Anderson Hospital
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-zLbcyfg6A42F-24~
+    name: ZLbcyfg6A42f
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: ZLbcyfg6A42f
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '40.7411999,-84.1181147'
+      - key: group
+        value: Mercy Health - St. Rita's Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-acz8BpA5Ajz6-10~
+    name: acz8bpA5ajz6
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: acz8bpA5ajz6
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6307885,-122.4184834'
+      - key: group
+        value: San Bruno Medical Offices
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-bTrMUwapvBsU-26~
+    name: bTrMUwapvBsU
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: bTrMUwapvBsU
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '40.7411999,-84.1181147'
+      - key: group
+        value: Mercy Health - St. Rita's Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-fBbha7ZyK233-23~
+    name: fBBHA7ZyK233
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: fBBHA7ZyK233
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '40.7411999,-84.1181147'
+      - key: group
+        value: Mercy Health - St. Rita's Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-uGkK5MptEfkv-3~
+    name: uGkK5mptEFKV
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: uGkK5mptEFKV
+      - key: model
+        value: RD04834
+      - key: image
+        value: /device-images/rd05034.png
+      - key: location
+        value: '37.6307885,-122.4184834'
+      - key: group
+        value: San Bruno Medical Offices
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-wA4XusQwXpyH-13~
+    name: wA4xusQWXpyH
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: wA4xusQWXpyH
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '21.3629627,-157.9019452'
+      - key: group
+        value: Moanalua Medical Center
+  - attributes:
+      - attributeTags: {}
+        dataType: number
+        name: manifold_temperature
+      - attributeTags: {}
+        dataType: number
+        name: rpm
+      - attributeTags: {}
+        dataType: number
+        name: battery_voltage
+      - attributeTags: {}
+        dataType: number
+        name: fuel_level
+      - attributeTags: {}
+        dataType: number
+        name: oil_pressure
+      - attributeTags: {}
+        dataType: number
+        name: output_current
+      - attributeTags: {}
+        dataType: number
+        name: running
+      - attributeTags: {}
+        dataType: gps
+        name: location
+      - attributeTags: {}
+        dataType: string
+        name: fault_description
+      - attributeTags: {}
+        dataType: string
+        name: maintenance_description
+      - attributeTags: {}
+        dataType: number
+        name: state_index
+      - attributeTags: {}
+        dataType: string
+        name: state_description
+      - attributeTags: {}
+        dataType: number
+        name: hours_running
+      - attributeTags: {}
+        dataType: number
+        name: days_running
+      - attributeTags: {}
+        dataType: number
+        name: is_in_maintenance_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_faulted_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_running_mode
+      - attributeTags: {}
+        dataType: number
+        name: is_in_stopped_mode
+    children: []
+    description: ''
+    deviceClass: standalone
+    id: ~losant-device-zcCp6EZ49XSk-21~
+    name: zcCp6eZ49xSK
+    tags:
+      - key: DeviceRecipe
+        value: Generator
+      - key: serial
+        value: zcCp6eZ49xSK
+      - key: model
+        value: QT130
+      - key: image
+        value: /device-images/qt130.png
+      - key: location
+        value: '39.3126283,-84.5173035'
+      - key: group
+        value: Mercy Health - Fairfield Hospital
+version: 1

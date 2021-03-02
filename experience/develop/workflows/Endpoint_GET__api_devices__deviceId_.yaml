@@ -1,0 +1,77 @@
+resourceType: ExperienceFlowVersion
+resources:
+  - description: Starter workflow for building a response to this endpoint
+    enabled: true
+    flowId: ~losant-flow-endpointGetApiDevicesDeviceId-7~
+    globals: []
+    id: ~losant-flowVersion-endpointGetApiDevicesDeviceId-6~
+    name: 'Endpoint GET /api/devices/{deviceId}'
+    nodes:
+      - config:
+          bodyTemplate: working.device
+          bodyTemplateType: path
+          cookieInfo: []
+          headerInfo:
+            - keyTemplate: Content-Type
+              valueTemplate: application/json
+          replyIdPath: ''
+          replyType: custom
+          responseCodeTemplate: '200'
+        id: SyLfJn-hx
+        meta:
+          category: output
+          description: ''
+          label: Endpoint Reply
+          name: endpoint-reply
+          x: 100
+          'y': 380
+        outputIds:
+          - - BkhzMc9hl
+        type: EndpointReplyNode
+      - config:
+          message: ''
+          property: ''
+        id: BkhzMc9hl
+        meta:
+          category: output
+          description: ''
+          label: Debug
+          name: debug
+          x: 100
+          'y': 500
+        outputIds: []
+        type: DebugNode
+      - config:
+          findMethod: id
+          idTemplate: '{{data.params.deviceId}}'
+          includeState: false
+          resultPath: working.device
+          tagsAsObject: true
+        id: uDpNYEBL4K
+        meta:
+          category: data
+          description: ''
+          id: uDpNYEBL4K
+          label: 'Device: Get'
+          name: get-device
+          x: 100
+          'y': 220
+        outputIds:
+          - - SyLfJn-hx
+        type: GetDeviceNode
+    triggers:
+      - config: {}
+        key: ~losant-experienceEndpoint-getApiDevicesDeviceId-9~
+        meta:
+          category: trigger
+          description: ''
+          label: Endpoint
+          name: endpoint
+          uiId: H1hL0oZhl
+          x: 100
+          'y': 100
+        outputIds:
+          - - uDpNYEBL4K
+        type: endpoint
+    version: develop
+version: 1
